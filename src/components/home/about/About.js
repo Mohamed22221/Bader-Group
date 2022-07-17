@@ -1,12 +1,16 @@
 import React from 'react'
 import "./About.scss"
 import twoPars from "../../../assets/twopars.svg"
+import video1 from "../../../assets/video1.mp4"
+
 import { Container } from '@mui/material'
 import ButtonLink from '../../glopal/ButtonLink'
 const About = () => {
   return (
-    <div className='glopal-margin'>
-     <Container maxWidth="xl">
+    <div >
+     <Container maxWidth="xl" >
+      <div className='container'>
+
       <div className='left-about'>
        <h3>About Us</h3>
        <h2>Our Vision</h2>
@@ -14,7 +18,8 @@ const About = () => {
         <ButtonLink title="Read More" />
       </div>
       <div className='right-about'>
-
+      <video  src={video1} muted type="video/mp4" autoPlay={true} preLoad="auto" loop></video>
+      </div>
       </div>
      </Container>
     </div>
