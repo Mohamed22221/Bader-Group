@@ -8,6 +8,7 @@ $Tajawal :'Tajawal', sans-serif;
 :root{
 --primary-color:#FF9900;
 --secound-color:#24242E;
+--secound-color-pold:#15141A;
 --third-color:#465D71;
 --background-color: #F6F6F6;
 --shadow:0px 3px 32px $primary-color ;
@@ -36,4 +37,7 @@ button{
  margin: 0;
  padding: 0;
   
+}
+.glopal-margin{
+ margin: 60px 0;
 }

@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from '@mui/material/Container';
 import "./NavBar.scss"
-import { GrLanguage } from 'react-icons/gr';
+import { RiMenu3Fill } from 'react-icons/ri';
 import { MdLanguage } from 'react-icons/md';
 import Logo from "../../assets/logo.svg"
 
 const NavBar = () => {
+  const [toggle , setToggle] = useState(false)
+  const HandelTogell = () =>{
+    setToggle((event) => !event)
+  }
   return (
     <div className='main-nav'>
      <Container maxWidth="xl">
@@ -14,20 +18,21 @@ const NavBar = () => {
      <div className='logo'>
         <img src={Logo} alt='logo' />
      </div>
-     <nav className='links'>
+     <nav className={`${toggle ===false ?"links" :"links links--open"}`}>
       <ul>
        <li className='active'>Home</li>
        <li>About US</li>
        <li>Projects</li>
        <li>Our Sector</li>
       </ul>
-     </nav>
+     
      <div className='buttons'>
       <button>العربيه<MdLanguage className='icon' /></button>
       <button>Contact us</button>
      </div>
-     <div className='menu-icon'>
-       <GrLanguage className='icon' />
+     </nav>
+     <div className='menu-icon' onClick={HandelTogell} >
+       <RiMenu3Fill className='icon' />
      </div>
      </div>
      </Container>

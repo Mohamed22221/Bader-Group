@@ -4,22 +4,51 @@
  justify-content: space-between;
  align-items: center;
 }
+%none {
+ @media (max-width:880px) {
+  display: none;
+ }
+}
 
 //main style nav
 .main-nav {
  background: transparent linear-gradient(180deg, #24242E 0%, #15141A 100%) 0% 0% no-repeat padding-box;
  font-family: 'Tajawal', sans-serif;
+ position: sticky;
+ left: 0;
+ right: 0;
+ top: 0;
+ z-index: 100;
  .navbar {
   @extend %flex;
   color: var(--white-color);
   height: 80px;
   padding: 10px 0;
+
   .links {
-   
+   @extend %flex;
+   @media (max-width:880px) {
+    z-index: 10;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #15141A;
+    position: fixed;
+    top: 78px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-880px);
+    transition: 0.4s ease-in-out;
+   }
+   //toggle menue
+   &--open{
+    transform: translateX(0px);
+   }
+    //active class
    .active{
     position: relative;
     color: #FF9900;
-    text-shadow: 0px 5px 20px var(--primary-color);
+    text-shadow: 0px 3px 15px var(--primary-color);
     transition: 0.4s;
     &::after{
      content: "";
@@ -35,8 +64,14 @@
     }
 
    }
+   //Routes  
    ul {
     @extend %flex;
+    @media (max-width:880px) {
+     flex-direction: column;
+    }
+
+
     li{
      padding: 10px 5px;
      margin: 4px 15px;
@@ -50,21 +85,29 @@
     }
    }
   }
+  //logo bader group
   .logo{
    margin: auto 0;
    padding: 5px 5px;
    background-color: var(--secound-color);
+   z-index: 18;
    img{
     height: 100px;
     width: 42px;
    }
   }
+  //two buttons
   .buttons{
    @extend %flex;
- 
+   @media (max-width:880px) {
+    flex-direction: column;
+   }
    button{
     margin:0px 15px;
     transition: 0.3s;
+    @media (max-width:880px) {
+     margin: 10px 0;
+    }
      @extend %flex;
      padding: 5px 10px;
      border: 2px solid var(--white-color);
@@ -83,15 +126,16 @@
      border-color: var(--primary-color);
     }
    }
-   
-
   }
   .menu-icon{
    display: none;
+   .icon{
+    font-size: 30px;
+   }
+   @media (max-width:880px) {
+    display: block;
+   }
   }
+
  }
-
-
-
-
 }
