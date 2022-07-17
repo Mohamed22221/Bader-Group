@@ -1,38 +1,41 @@
-$tops: 20px 30px 40px ;
-$lines: line1 line2 line3 ;
 
+$lines : (
+  line1 : (
+    top :15px,
+    left : 0
+  ) ,
+  line2 : (
+    top :35px,
+    left :500px
+  ) ,
+  line3 : (
+    top :55px,
+    left :1000px
+  ) 
+
+);
 .main-counter{
  overflow: hidden;
  background: url("../../assets/bg-counter.svg");
- @each $line in $lines {
-  .#{$line}{
+ @each $name , $size in $lines {
+  .#{$name}{
     width: 100%;
     position: relative;
-    
     &::after{
      content: "";
      position: absolute;
      width: 1000px;
      height: 3px;
      background-color: var(--font);
+     top: map-get($size , top);
+     left: map-get($size, left );
    }
 
   }
   
  }
- span:nth-child(1){
-  top: 15px;
-  left: 0px;
-  
- }
- span:nth-child(2){
-  top: 35px;
-  left: 500px;
- }
- span:nth-child(3){
-  top: 55px;
-  left: 1000px;
- }
+
+ //content sectios
  .container{
  height: 380px;
  display: flex;
