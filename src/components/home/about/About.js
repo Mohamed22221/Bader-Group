@@ -1,8 +1,6 @@
 import React from 'react'
 import "./About.scss"
-import twoPars from "../../../assets/twopars.svg"
 import video1 from "../../../assets/video1.mp4"
-
 import { Container } from '@mui/material'
 import ButtonLink from '../../glopal/ButtonLink'
 const About = () => {
@@ -18,7 +16,7 @@ const About = () => {
         <ButtonLink title="Read More" />
       </div>
       <div className='right-about'>
-      <video  src={video1} muted type="video/mp4" autoPlay={true} preLoad="auto" loop></video>
+      <video  src={video1} muted type="video/mp4" autoPlay={true} preload="auto" loop></video>
       </div>
       </div>
      </Container>

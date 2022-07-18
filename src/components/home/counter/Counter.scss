@@ -16,7 +16,7 @@ $lines : (
 );
 .main-counter{
  overflow: hidden;
- background: url("../../assets/bg-counter.svg");
+ background-color: var(--third-color);
  @each $name , $size in $lines {
   .#{$name}{
     width: 100%;

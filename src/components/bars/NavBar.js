@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
-import Container from '@mui/material/Container';
 import "./NavBar.scss"
+import Logo from "../../assets/logo.svg"
+import Container from '@mui/material/Container';
 import { RiMenu3Fill } from 'react-icons/ri';
 import { MdLanguage } from 'react-icons/md';
-import Logo from "../../assets/logo.svg"
+
 
 const NavBar = () => {
   const [toggle , setToggle] = useState(false)
   const HandelTogell = () =>{
-    setToggle((event) => !event)
+    setToggle(!toggle)
   }
   return (
     <div className='main-nav'>
@@ -18,7 +19,7 @@ const NavBar = () => {
      <div className='logo'>
         <img src={Logo} alt='logo' />
      </div>
-     <nav className={`${toggle ===false ?"links" :"links links--open"}`}>
+     <nav className={`${toggle ===false ?" links " :" links links--open "}`}>
       <ul>
        <li className='active'>Home</li>
        <li>About US</li>
