@@ -5,6 +5,7 @@ import Fotter from '../components/fotter/Fotter'
 import DottedLine from '../components/glopal/DottedLine'
 import About from '../components/home/about/About'
 import Header from '../components/home/header/Header'
+import Contact from '../components/home/contact/Contact'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
      <DottedLine />
      <Counter />
      <DottedLine />
+     <Contact />
      <Fotter />
     </>
   )

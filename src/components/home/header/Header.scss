@@ -41,6 +41,14 @@
      margin-top: 20px;
     }
    }
+   @media (max-width:360px) {
+    h1{
+     font-size: 20px;
+    }
+    p{
+     font-size: 12px;
+    }
+  }
   }
 
   .right-header{
@@ -58,6 +66,10 @@
      width: 410px;
      height: 360px;
     }
+    @media (max-width:360px) {
+     width: 350px;
+     height: 280px;
+   }
 
 
 

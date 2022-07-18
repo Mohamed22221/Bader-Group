@@ -135,6 +135,10 @@
   p{
    font-size: 13px;
    color: var(--third-color);
+   @media (max-width:565px) {
+    font-size: 13px;
+    margin: 0px 0 ;
+  }
   }
   .links{
    a{
@@ -142,8 +146,13 @@
        font-size: 14px;
        color: var(--third-color);
        text-decoration: underline;
+       @media (max-width:565px) {
+         font-size: 11px;
+         margin: 0 2px;
+       }
    }
 
   }
+
  }
 }
