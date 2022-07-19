@@ -4,7 +4,7 @@
  overflow: hidden;
  
  .header{
- height: #{100vh-8vh};
+ height: #{100vh-9vh};
  position: relative;
   .left-header{
    width: 550px;
@@ -27,7 +27,7 @@
    @media (max-width:576px) {
     width: 100%;
     padding: 10px;
-    top: 70px;
+    top: 85px;
     transform: translateY(0);
     h1{
      font-size: 30px;
@@ -64,7 +64,7 @@
     }
     @media (max-width:576px) {
      width: 410px;
-     height: 360px;
+     height: 400px;
     }
     @media (max-width:360px) {
      width: 350px;
