@@ -1,0 +1,25 @@
+.Video_sec{
+    background-image: url('../../../assets/bgabout2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+
+}
+.Video_sec video{
+    width: 65rem;
+    padding: 3rem;
+}
+
+.aboutus-sec1{
+    filter: drop-shadow(0px 7px 49px rgba(255, 153, 0, 1));
+   
+    overflow: visible;
+    width: 668px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    color: rgba(255,153,0,1);
+}
