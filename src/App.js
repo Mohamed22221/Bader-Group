@@ -5,11 +5,15 @@ import Contact from "./components/home/contact/Contact";
 import Fotter from "./components/fotter/Fotter";
 import About from "./bages/About";
 import Projects from "./bages/Projects";
+import ScrollToTop from "./ScrollToTop";
+import ScrollTop from "./components/glopal/ScrollTop";
 function App() {
 
   
   return (
     <>
+    <ScrollToTop />
+    <ScrollTop />
     <NavBar />
     <Routes>
     
