@@ -11,6 +11,10 @@ const NavBar = () => {
   const HandelTogell = () =>{
     setToggle(!toggle)
   }
+  const HandelCloseMenu = () =>{
+    setToggle(false)
+  }
+  
   return (
     <div className='main-nav'>
      <Container maxWidth="xl">
@@ -21,8 +25,8 @@ const NavBar = () => {
      </div>
      <nav className={`${toggle ===false ?" links " :" links links--open "}`}>
       <ul>
-       <NavLink to="/Bader-Group"><li >Home</li></NavLink>
-       <NavLink to="/about"><li>About US</li></NavLink>
+       <NavLink to="/Bader-Group" onClick={HandelCloseMenu}><li >Home</li></NavLink>
+       <NavLink to="/about" onClick={HandelCloseMenu}><li>About US</li></NavLink>
        <li>Projects</li>
        <li>Our Sector</li>
       </ul>

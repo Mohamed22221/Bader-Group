@@ -2,9 +2,15 @@
  //button filter
  .buttons-filter{
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  @media (max-width:550px) {
+   justify-content: center;
+
+  }
   button{
-   border: 1px solid s; 
-   margin: 7px;
+   border: 1px solid ; 
+   margin: 4px;
    padding: 5px 20px;
    color: var(--font);
   }
@@ -15,15 +21,25 @@
  
  }
  .menu{
-   width: 100%;
+   
    display: flex;
    justify-content: space-evenly;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
+
+   
  }
  .menu-item{
   height: 350px;
-  margin: 60px 0;
+  margin: 30px 0;
   overflow: hidden;
+  
+  @media (max-width:550px) {
+   margin: 15px 0;
+   width: 100%;
+   
+   background-size: contain;
+
+  }
   img{
 
   }
