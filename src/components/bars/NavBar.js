@@ -4,7 +4,7 @@ import Logo from "../../assets/logo.svg"
 import Container from '@mui/material/Container';
 import { RiMenu3Fill } from 'react-icons/ri';
 import { MdLanguage } from 'react-icons/md';
-
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [toggle , setToggle] = useState(false)
@@ -21,8 +21,8 @@ const NavBar = () => {
      </div>
      <nav className={`${toggle ===false ?" links " :" links links--open "}`}>
       <ul>
-       <li className='active'>Home</li>
-       <li>About US</li>
+       <NavLink to="/Bader-Group"><li >Home</li></NavLink>
+       <NavLink to="/about"><li>About US</li></NavLink>
        <li>Projects</li>
        <li>Our Sector</li>
       </ul>

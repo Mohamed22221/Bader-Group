@@ -90,7 +90,7 @@ const Fotter = () => {
         </div>
         <div className='cookies'>
           <div>
-          <p>Fady Sameh 2022</p>
+          <p>Bader Group 2022</p>
           </div>
           <div className='links'>
           <a href=''>COOKIES</a>
