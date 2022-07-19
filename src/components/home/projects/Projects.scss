@@ -1,0 +1,31 @@
+.projects{
+ //button filter
+ .buttons-filter{
+  display: flex;
+  button{
+   border: 1px solid s; 
+   margin: 7px;
+   padding: 5px 20px;
+   color: var(--font);
+  }
+  .active{
+   border:1px solid var(--primary-color);
+   color: var(--primary-color);
+  }
+ 
+ }
+ .menu{
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+ }
+ .menu-item{
+  height: 350px;
+  margin: 60px 0;
+  overflow: hidden;
+  img{
+
+  }
+ }
+}
