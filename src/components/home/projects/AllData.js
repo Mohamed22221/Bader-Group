@@ -7,25 +7,41 @@ export default [
  {
   id:1,
   type:"Residential",
-  img: project2,
+  imges : [
+   {id:1 , src:project1},
+   {id:2 , src:project2}
+   
+  ]
 
  },
  {
   id:2,
   type:"Residential",
-  img: project2,
+  imges : [
+   {id:1 , src:project1},
+   {id:2 , src:project2}
+   
+  ]
 
  },
  {
   id:3,
   type:"Infrastructure",
-  img: project1,
+  imges : [
+   {id:1 , src:project1},
+   {id:2 , src:project2}
+   
+  ]
 
  },
  {
   id:4,
   type:"Infrastructure",
-  img: project1,
+  imges : [
+   {id:1 , src:project1},
+   {id:2 , src:project2}
+   
+  ]
 
  }
 ]

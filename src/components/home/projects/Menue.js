@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Carousel from "react-elastic-carousel";
 const Menue = ({menueItem}) => {
   return (
     <div className='menu'>
@@ -7,10 +7,21 @@ const Menue = ({menueItem}) => {
      menueItem.map(item =>{
       return (
        <div className='menu-item' key={item.id}>
-        <div className='img-menu'>
-         <img src={item.img} alt="project" />
+        
+         <Carousel>
+         {
+          item.imges.map(item =>{
+             return (
+            <div className='img-menu' key={item.id}>
+             <img src={item.src} />
+            </div>
+           )
+          })
+
+         }
+         </Carousel>
         </div>
-       </div>
+      
       )
      })
      }
