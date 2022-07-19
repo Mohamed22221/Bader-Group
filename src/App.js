@@ -4,6 +4,7 @@ import NavBar from "./components/bars/NavBar";
 import Contact from "./components/home/contact/Contact";
 import Fotter from "./components/fotter/Fotter";
 import About from "./bages/About";
+import Projects from "./bages/Projects";
 function App() {
 
   
@@ -14,6 +15,8 @@ function App() {
     
     <Route path="Bader-Group" element={<Home />} />
     <Route path="about" element={<About />} />
+    <Route path="projects" element={<Projects />} />
+
 
     </Routes>
     <Contact />

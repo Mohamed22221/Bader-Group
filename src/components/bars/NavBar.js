@@ -27,7 +27,7 @@ const NavBar = () => {
       <ul>
        <NavLink to="/Bader-Group" onClick={HandelCloseMenu}><li >Home</li></NavLink>
        <NavLink to="/about" onClick={HandelCloseMenu}><li>About US</li></NavLink>
-       <li>Projects</li>
+       <NavLink to="/projects" onClick={HandelCloseMenu}><li>Projects</li></NavLink>
        <li>Our Sector</li>
       </ul>
      

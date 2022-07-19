@@ -7,12 +7,13 @@ const Sec_1 = () => {
   return (
     <div >
 
-<Container maxWidth="xl" className='Video_sec' >
+<Container maxWidth="xl"  >
 <h5 className='aboutus-sec1'>Kuwait Vision 2035</h5>
 
       <div className='container '>
       <video  src={video1} muted type="video/mp4" autoPlay={true} preload="auto" loop></video>
-</div></Container>
+      </div>
+</Container>
      <Container maxWidth="xl" >
       <div className='container'>
 
