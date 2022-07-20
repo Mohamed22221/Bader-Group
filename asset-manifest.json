@@ -1,18 +1,25 @@
 {
   "files": {
-    "main.css": "/Bader-Group/static/css/main.85e10dd5.css",
-    "main.js": "/Bader-Group/static/js/main.24d57ac0.js",
+    "main.css": "/Bader-Group/static/css/main.9ba689ec.css",
+    "main.js": "/Bader-Group/static/js/main.5f23bc19.js",
     "static/media/video1.mp4": "/Bader-Group/static/media/video1.cab45ae9134e126a5bf5.mp4",
     "static/media/project1.svg": "/Bader-Group/static/media/project1.5ed6bee0c20abadf654924fc03055ea4.svg",
     "static/media/bg-projects.png": "/Bader-Group/static/media/bg-projects.8c60eed6e2cb46d0511c.png",
+    "static/media/img12.png": "/Bader-Group/static/media/img12.e4b8762b90b0fec3cbc3.png",
     "static/media/header.png": "/Bader-Group/static/media/header.6ffd9e14f9830d940fd7.png",
     "static/media/project2.svg": "/Bader-Group/static/media/project2.7c4f3af2b12e92c1b8829717d6063c7e.svg",
     "static/media/bg-contact.svg": "/Bader-Group/static/media/bg-contact.044560020b17c2676434323fedf59fc2.svg",
     "static/media/about2.png": "/Bader-Group/static/media/about2.616ef43a39ce911b96fb.png",
+    "static/media/aboutus-image2.png": "/Bader-Group/static/media/aboutus-image2.121d90507cc0464012bc.png",
+    "static/media/Group 281.png": "/Bader-Group/static/media/Group 281.b5ed93d35b5f720d4ae2.png",
+    "static/media/Subtraction 1.png": "/Bader-Group/static/media/Subtraction 1.9d9fe5a3c377bf05064b.png",
+    "static/media/aboutus-image1.png": "/Bader-Group/static/media/aboutus-image1.d47d71229dfdd49cd241.png",
     "static/media/newkuwait.png": "/Bader-Group/static/media/newkuwait.ca102160d690a716fdcc.png",
     "static/media/partners3.svg": "/Bader-Group/static/media/partners3.3d9b8951b7a61eb08776b5e95ffb6a1e.svg",
     "static/media/bgabout2.png": "/Bader-Group/static/media/bgabout2.dea06f30767e0e98c196.png",
+    "static/media/aboutus-bg2.png": "/Bader-Group/static/media/aboutus-bg2.4da79b2e4b5c2deedd31.png",
     "static/media/Path1.png": "/Bader-Group/static/media/Path1.74e0489aab90938a0d3f.png",
+    "static/media/Rectangle 185.png": "/Bader-Group/static/media/Rectangle 185.29ba7ed4e89fcb0eba2e.png",
     "static/media/ministry5.svg": "/Bader-Group/static/media/ministry5.52ff0250bb43f8758fbcf0785fee50c7.svg",
     "static/media/partners1.svg": "/Bader-Group/static/media/partners1.ce5181bb1b9e0363c389cef22a702f63.svg",
     "static/media/ministry4.svg": "/Bader-Group/static/media/ministry4.71884e3d04573ee1851ed776df4799f1.svg",
@@ -34,12 +41,13 @@
     "static/media/Iconmail-black.svg": "/Bader-Group/static/media/Iconmail-black.7dc4e64073445d4a71ef9dc78795f38f.svg",
     "static/media/Iconfacebook.svg": "/Bader-Group/static/media/Iconfacebook.e0cddd6877093cd2c47c0aadd9de045a.svg",
     "static/media/Iconfacebook-black.svg": "/Bader-Group/static/media/Iconfacebook-black.3e9fe20c509bd0efdb6ca41fae557969.svg",
+    "static/media/bigDottedLine.svg": "/Bader-Group/static/media/bigDottedLine.f272a63ac8ebc73ea9706c2c97f9f5ca.svg",
     "static/media/dottedLine.svg": "/Bader-Group/static/media/dottedLine.9773a5d6e478ef174e748cc2638fe274.svg",
-    "main.85e10dd5.css.map": "/Bader-Group/static/css/main.85e10dd5.css.map",
-    "main.24d57ac0.js.map": "/Bader-Group/static/js/main.24d57ac0.js.map"
+    "main.9ba689ec.css.map": "/Bader-Group/static/css/main.9ba689ec.css.map",
+    "main.5f23bc19.js.map": "/Bader-Group/static/js/main.5f23bc19.js.map"
   },
   "entrypoints": [
-    "static/css/main.85e10dd5.css",
-    "static/js/main.24d57ac0.js"
+    "static/css/main.9ba689ec.css",
+    "static/js/main.5f23bc19.js"
   ]
 }
