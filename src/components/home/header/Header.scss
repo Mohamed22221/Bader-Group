@@ -4,7 +4,11 @@
  overflow: hidden;
  
  .header{
- height: #{100vh-9vh};
+ height: #{100vh-8vh};
+ @media (max-width:576px) {
+ 
+  height: #{100vh-10vh};
+ }
  position: relative;
   .left-header{
    width: 550px;
