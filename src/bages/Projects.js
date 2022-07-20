@@ -6,6 +6,7 @@ const Projects = ({}) => {
     <div>
      <HeaderSec_1 title="Our Projects" />
      <ProjectsComponent />
+     
     </div>
   )
 }

@@ -1,0 +1,53 @@
+.main-identification{
+ background-color: var(--secound-color);
+ .container-identification{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  @media (max-width:878px) {
+   flex-direction: column;
+  }
+  .identification-item{
+   padding: 20px;
+   @media (max-width:878px) {
+    padding: 5px;
+   }
+  }
+ .left-identification{
+  img{
+   width: 600px;
+   @media (max-width:1078px) {
+    width: 400px;
+   }
+   @media (max-width:878px) {
+    width: 100%;
+
+   }
+  }
+
+
+  
+ }
+ .right-identification{
+  h1{
+   color: aliceblue;
+   @media (max-width:1078px) {
+    font-size: 22px;
+   }
+   @media (max-width:878px) {
+    width: 100%;
+   }
+  }
+  p{
+   color: var(--font) !important;
+   padding: 10px 0;
+   font-size: 14px;
+   @media (max-width:878px) {
+    width: 100%;
+    
+   }
+  }
+ }
+ }
+}
