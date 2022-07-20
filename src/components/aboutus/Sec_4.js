@@ -11,7 +11,7 @@ import ButtonLink from '../glopal/BigDottedLine'
 
 const Sec_4 = () => {
   return (
-    <div>
+    
 
 
 <div  className='aboutus_sec4 glopal-margin'>
@@ -48,7 +48,7 @@ const Sec_4 = () => {
  
 
         
-    </div>
+    
   )
 }
 
