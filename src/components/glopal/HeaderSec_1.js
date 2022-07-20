@@ -1,14 +1,14 @@
 import { Container } from '@mui/system'
 import React from 'react'
-import "./HeaderBrojects.scss"
-const HeaderBrojects = () => {
+import "./HeaderSec_1.scss"
+const HeaderSec_1 = ({title}) => {
   return (
     <div className='main-section'>
      <Container maxWidth="xl">
-     <h1>Our Projects</h1>
+     <h1>{title}</h1>
      </Container>
     </div>
   )
 }
 
-export default HeaderBrojects
+export default HeaderSec_1

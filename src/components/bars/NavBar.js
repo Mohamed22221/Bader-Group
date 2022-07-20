@@ -28,7 +28,7 @@ const NavBar = () => {
        <NavLink to="/Bader-Group" onClick={HandelCloseMenu}><li >Home</li></NavLink>
        <NavLink to="/about" onClick={HandelCloseMenu}><li>About US</li></NavLink>
        <NavLink to="/projects" onClick={HandelCloseMenu}><li>Projects</li></NavLink>
-       <li>Our Sector</li>
+       <NavLink to="/sector" onClick={HandelCloseMenu}><li>Our Sector</li></NavLink>
       </ul>
      
      <div className='buttons'>
