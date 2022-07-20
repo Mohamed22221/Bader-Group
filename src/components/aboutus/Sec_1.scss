@@ -1,0 +1,210 @@
+.Video_sec{
+    background-image: url('../../assets/bgabout2.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+
+}
+.Video_sec video{
+    padding: 3rem;
+}
+
+.aboutus-sec1{
+    filter: drop-shadow(0px 7px 49px rgba(255, 153, 0, 1));
+
+   overflow: visible;
+    width: 100%;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    color: rgb(255, 153, 0);
+
+}
+.FontNorm{
+    font-weight: normal;
+
+}
+.aboutus-sec-2-prag{
+    letter-spacing: 0.1px;
+    font-size: 13px;
+    line-height: 40px;
+
+}
+.style-space{
+    justify-content: space-between;
+
+}
+.bg-sec2_about{
+    background-image: url('../../assets/aboutus-bg2.png') !important;
+    padding: 4rem;
+    background-repeat: no-repeat;
+    background-size: 41rem;
+    background-position: 0px 18px;
+}
+
+
+
+
+
+.title h1 {
+	font-family: var(--ff-primary);
+	color: var(--title-clr);
+	margin-top: 2em;
+}
+
+#title-border {
+	height: 2px;
+	width: 100%;
+	background-color: var(--primery-blue);
+	margin-bottom: 5em;
+}
+
+/***************************
+****************************
+       image section
+****************************
+***************************/
+
+.review-container {
+	background-image: url('../../assets/Group\ 281.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;    background-position: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: #bed1df 0 0px 10px 10px;
+	padding: 2em;
+	border-radius: 5px;
+}
+
+.img-container {
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+.review-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin: -5rem 0 0 0;
+
+	object-fit: cover;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 5px -5px var(--primery-blue);    border: 5px solid rgba(255,153,0,1);
+
+}
+
+/***************************
+****************************
+        Name & text
+****************************
+***************************/
+
+.review-name {
+	font-family: var(--ff-primary);
+	text-transform: capitalize;
+	letter-spacing: 0.1em;
+	font-weight: normal;
+    font-size: 42px;
+    color: rgba(255,255,255,1);
+}
+
+.review-job {
+	font-family: sans-serif;
+	text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 18px;
+    color: rgba(255,153,0,1);
+    letter-spacing: 1.78px;
+
+}
+
+.review-text {
+	font-weight: 500;
+	font-size: 1.2em;
+    text-align: center;
+	margin-top: 1em;
+   color: #fff;
+
+}
+
+
+.aboutus-sec4-bg{
+    background-image: url('../../assets/Rectangle 185.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;	
+}
+#Icon_metro-mail,#Icon_awesome-linkedin-in,#Icon_awesome-facebook-f,#Icon_awesome-twitter {
+    fill: rgba(255,255,255,1);
+}
+.Icon_metro-mail {
+    overflow: visible;
+    width: 19.938px;
+    height: 15.951px;
+
+    transform: matrix(1,0,0,1,0,0);
+}
+#Group_287 {
+    width: 200px;
+    height: 18.847px;
+    left: 300px;
+    display: flex;
+    top: 776.345px;
+    overflow: visible;
+    flex-direction: row;
+    justify-content: space-between;
+}.about-us-socialmedia {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 1% 4%;
+}
+h5.aboutus-sec4-prag {
+    color: #fff;
+}
+
+
+// global
+.image-fluid{
+	width: 100%;
+}
+
+.Align-center{
+	text-align: center;
+
+}
+
+
+// Responsive
+@media only screen and (max-width: 600px) {
+	.style-space {
+		flex-direction: column-reverse;
+	}
+	.review-container {
+		background-image: url('../../assets/Subtraction 1.png') !important;
+		background-size: cover;
+		background-position: initial;
+	
+	}
+	.about-us-socialmedia {
+		display: flex;
+		flex-direction: column;
+		padding: 1% 4%;
+	}
+	.review-container{
+		padding: 0em;
+
+	}
+	.review-text {
+			font-size: 1em;}
+			.review-name{    font-size: 25px;
+			}
+  }
