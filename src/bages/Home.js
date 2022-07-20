@@ -5,6 +5,7 @@ import About from '../components/home/about/About'
 import Header from '../components/home/header/Header'
 
 import Projects from '../components/home/projects/Projects'
+import Partener from '../components/home/partner/Partener'
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
      <DottedLine />
      <Counter />
      <DottedLine />
+     <Partener />
      
      
     </>

@@ -5,6 +5,7 @@ import Identification from '../components/sectors/identification/Identification'
 import ProjectsComponent from "../components/home/projects/Projects"
 import Counter from '../components/home/counter/Counter'
 import DottedLine from '../components/glopal/DottedLine'
+import Partener from '../components/home/partner/Partener'
 
 const Sectors = () => {
   return (
@@ -16,6 +17,7 @@ const Sectors = () => {
     <DottedLine />
     <Counter />
     <DottedLine />
+    <Partener />
     </>
   )
 }

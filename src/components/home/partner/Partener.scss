@@ -1,0 +1,41 @@
+.main-partener{
+ .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  &::after{
+   content: "Success Partners";
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   position: absolute;
+   top: 50%;
+   left:40px;
+   transform: translateY(-50%);
+   right: 40px;
+   height: 70px;
+   background-color: var(--primary-color);
+   z-index: 0;
+   margin: auto;
+   font-size: 25px;
+   color: white;
+
+  }
+  .one-ministey{
+   background-color: var(--third-color-opacity);
+   width: 30%;
+   z-index: 1;
+   @media (max-width:1000px)  {
+    width: 80%;
+    z-index: 0;
+   }
+   img{
+    width: 100%;
+    
+   }
+  }
+
+ }
+}
