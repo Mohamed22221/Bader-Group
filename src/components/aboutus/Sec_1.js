@@ -10,7 +10,7 @@ import ButtonLink from '../glopal/ButtonLink'
 
 const Sec_1 = () => {
   return (
-    <div >
+    <div className='glopal-margin' >
             
 <div  className='Video_sec'>
 <Container maxWidth="xl">

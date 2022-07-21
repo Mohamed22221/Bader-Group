@@ -1,0 +1,29 @@
+.main-slider{
+ height: 100%;
+ .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .left-slider{
+   width: 40%;
+   padding: 0 20px;
+   h1{
+    color: var(--primary-color);
+   }
+   p{
+    color: var(--font);
+    line-height: 30px;
+
+   }
+  }
+  .right-slider{
+
+   padding: 0 20px;
+   img{
+    height: 100%;
+    width: 100%;
+   }
+  }
+
+ }
+}

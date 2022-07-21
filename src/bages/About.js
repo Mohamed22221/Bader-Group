@@ -5,10 +5,12 @@ import Sec_3 from '../components/aboutus/Sec_3'
 import Sec_4 from '../components/aboutus/Sec_4'
 import Partener from '../components/home/partner/Partener'
 import DottedLine from '../components/glopal/DottedLine'
+import HeaderAbout from '../components/aboutus/header/HeaderAbout'
 
 const About = () => {
   return (
     <>
+    <HeaderAbout />
     <Sec_1></Sec_1> 
     <Sec_2></Sec_2>
     <Sec_3></Sec_3>
