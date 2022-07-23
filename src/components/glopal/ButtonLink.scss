@@ -11,6 +11,7 @@
   background-color:var(--primary-color);
   border-radius: 10px;
   width: 140px;
+
   &:hover svg{
    animation: arrow 750ms linear infinite;
   }
