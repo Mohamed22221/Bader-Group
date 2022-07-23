@@ -4,6 +4,8 @@ import { Container } from '@mui/material'
 import LogoFotter from "../../assets/logoFotter.svg"
 import { MdDone } from 'react-icons/md';
 import { BsArrowRight } from 'react-icons/bs';
+import { BsArrowLeft } from 'react-icons/bs';
+
 
 //img ministries 
 import ministry1 from "../.././assets/ministry1.svg"
@@ -22,11 +24,15 @@ import face from "../.././assets/Iconfacebook.svg"
 import linked from "../.././assets/Iconlinkedin.svg"
 import mail from "../.././assets/Iconmail.svg"
 import twitter from "../.././assets/Icontwitter.svg"
+import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router-dom';
 
 
 
 
 const Fotter = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className='main-fotter'>
       <Container maxWidth="xl"  >
@@ -36,17 +42,17 @@ const Fotter = () => {
         </div>
         <div className='column'>
         <h3>SITMAP</h3>
-        <a href='#'>Home<BsArrowRight/></a>
-        <a href='#'>About us<BsArrowRight/></a>
+        <NavLink to="/Bader-Group">Home{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
+        <NavLink to="/about">About us{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
 
-        <a href='#'>Our Projects<BsArrowRight/></a>
-        <a href='#'>Our Sector<BsArrowRight/></a>
+        <NavLink to="/projects" >Our Projects{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
+        <NavLink to="/sector">Our Sector{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
         </div>
         <div className='column'>
         <h3>Help</h3>
-        <a href='#'>Contact Us<BsArrowRight/></a>
-        <a href='#'>FAQ<BsArrowRight/></a>
-        <a href='#'>Policies<BsArrowRight/></a>
+        <a href='#Contact'>Contact Us{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</a>
+        <a href='#'>FAQ{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</a>
+        <a href='#'>Policies{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</a>
         </div>
         <div className='ministries'>
         <h3>Governmental bodies</h3>
@@ -74,7 +80,7 @@ const Fotter = () => {
           <div className='subscribe-line'>
           <h3>Subscribe for newslatter</h3>
           <input placeholder='Subscribe now' />
-          <button><MdDone /></button>
+          <button className={i18n.language === "en"?" btn-right ":" btn-left "}><MdDone /></button>
           </div>
           <div className='subscribe-line'>
             <h4>Follow us on</h4>

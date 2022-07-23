@@ -56,12 +56,18 @@
   }
 
   .right-header{
+    .right{
+      right: 0%;
+    }
+    .left{
+      left: 0;
+    }
    img{
     width: 903px;
     height: 652px;
     position: absolute;
     bottom: 0;
-    right: 0;
+
     @media (max-width: 1300px){
      width: 700px;
      height: 500px;

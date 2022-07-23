@@ -35,7 +35,7 @@ const NavBar = () => {
       <div className='navbar'>
      
      <div className='logo'>
-        <img src={Logo} alt='logo' />
+     <NavLink to="/Bader-Group" onClick={HandelCloseMenu}><img src={Logo} alt='logo' /></NavLink>
      </div>
      <nav className={`${toggle ===false ?" links " :" links links--open "}`}>
       <ul>
@@ -49,7 +49,7 @@ const NavBar = () => {
       {i18n.language == "en" && <button onClick={languageAR}>العربيه<MdLanguage className='icon' /></button>}
       {i18n.language == "ar" && <button onClick={languageEn}>الانجليزيه<MdLanguage className='icon' /></button>}
 
-      <button>Contact us</button>
+      <button><a href='#Contact'>Contact us</a></button>
      </div>
      </nav>
      <div className='menu-icon' onClick={HandelTogell} >

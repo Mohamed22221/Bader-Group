@@ -10,7 +10,7 @@ import  Mail from "../../../assets/Iconmail-black.svg"
 
 const Contact = () => {
   return (
-    <div className='main-contact glopal-margin'>
+    <div className='main-contact glopal-margin' id='Contact'>
      <Container maxWidth="xl"  >
       <div className='container'>
        <form>
