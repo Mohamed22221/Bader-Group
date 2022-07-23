@@ -3,7 +3,9 @@ import project1 from "../../../assets/project1.svg"
 import project2 from "../../../assets/project2.svg"
 
 
+
 export default [
+ 
  {
   id:1,
   type:"Residential",

@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{memo} from 'react'
 import Carousel from "react-elastic-carousel";
 const Menue = ({menueItem}) => {
   return (
@@ -11,6 +11,7 @@ const Menue = ({menueItem}) => {
          <Carousel>
          {
           item.imges.map(item =>{
+            
              return (
             <div className='img-menu' key={item.id}>
              <img src={item.src} />
@@ -29,4 +30,4 @@ const Menue = ({menueItem}) => {
   )
 }
 
-export default Menue
+export default memo(Menue)

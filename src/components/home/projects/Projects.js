@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {  useState ,memo } from 'react'
 import Buttons from './Buttons'
 import { Container } from '@mui/material'
 import "./Projects.scss"
@@ -7,8 +7,8 @@ import data from "./AllData"
 
 const Projects = () => {
   const [menueItem , setMenueItem] = useState(data)
-  
-  const Filter = (button) =>{
+
+  const Filter =  (button) =>{
     if(button === "All work"){
       setMenueItem(data)
       return;
@@ -29,4 +29,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default memo(Projects)

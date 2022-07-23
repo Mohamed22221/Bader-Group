@@ -1,4 +1,4 @@
-import React, { useState  ,useEffect } from 'react'
+import React, { useState  ,useEffect ,memo } from 'react'
 
 const Buttons = ({Filter}) => {
  const [stateData , setStateData] = useState({
@@ -51,4 +51,4 @@ const Buttons = ({Filter}) => {
   )
 }
 
-export default Buttons
+export default memo(Buttons)
