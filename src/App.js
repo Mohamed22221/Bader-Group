@@ -8,11 +8,17 @@ import Projects from "./bages/Projects";
 import ScrollToTop from "./ScrollToTop";
 import ScrollTop from "./components/glopal/ScrollTop";
 import Sectors from "./bages/Sectors";
+import { use } from "i18next";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 function App() {
 
-
+  //state toggle language En & Ar 
+  const { t, i18n } = useTranslation();
+  const [Dir , setDir] = useState("ltr")
+  const [language , setLang] = useState("en")
   return (
-    <>
+    <div dir={i18n.language == "en" ? Dir : "rtl"} lang={i18n.language == "en" ? language : "ar"}>
       <ScrollToTop />
       <ScrollTop />
       <NavBar />
@@ -24,7 +30,7 @@ function App() {
       </Routes>
       <Contact />
       <Fotter />
-    </>
+    </div>
 
   );
 }

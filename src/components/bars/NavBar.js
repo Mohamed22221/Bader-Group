@@ -5,6 +5,7 @@ import Container from '@mui/material/Container';
 import { RiMenu3Fill } from 'react-icons/ri';
 import { MdLanguage } from 'react-icons/md';
 import { NavLink } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const NavBar = () => {
   const [toggle , setToggle] = useState(false)
@@ -14,6 +15,19 @@ const NavBar = () => {
   const HandelCloseMenu = () =>{
     setToggle(false)
   }
+  //toogle language wepsite
+    const { t, i18n } = useTranslation();
+  const languageEn = () => {
+    {i18n.changeLanguage("en") }
+    setToggle(false)
+    
+  };
+  const languageAR = () => {
+    {i18n.changeLanguage("ar")}
+    setToggle(false)
+   
+  };
+  
   
   return (
     <div className='main-nav'>
@@ -32,7 +46,9 @@ const NavBar = () => {
       </ul>
      
      <div className='buttons'>
-      <button>العربيه<MdLanguage className='icon' /></button>
+      {i18n.language == "en" && <button onClick={languageAR}>العربيه<MdLanguage className='icon' /></button>}
+      {i18n.language == "ar" && <button onClick={languageEn}>الانجليزيه<MdLanguage className='icon' /></button>}
+
       <button>Contact us</button>
      </div>
      </nav>
