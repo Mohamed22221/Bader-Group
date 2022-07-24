@@ -1,3 +1,60 @@
 {
+ "nav" : {
+  "home" : "Home",
+  "about" : "About US",
+  "projects" : "Projects",
+  "our-sector" : "Our Sector",
+  "contact-us" :"Contact Us",
+  "faq" :"FAQ",
+  "policies" :"Policies"
+ },
+ "header" : {
+  "title-bader" : "Bader Construction Group",
+  "paragraph-bader" : "We show you our development plan and ways to participate in direct investment in Kuwait",
+  "button-bader" : "Hire Us"
+ },
+ "sec-about" : {
+  "title-about" : "Bader Construction Group",
+  "vision-about" : "Our Vision",
+  "paragraph-about" : "In accordance with the modern vision and development plan, we were the pioneers and the ones who first took the initiative of its kind, our knowledge and expertise in the management of our agencies helped our agencies avoid any current or future risks as we provide special and distinctive services for each agency separately which corroborate with its specialty and its scope of work, and all this under effective management …….",
+  "button-about" : "Read More"
+ },
+ "filter" : {
+  "btn-1" : "All work",
+  "btn-2" : "Residential",
+  "btn-3" : "Infrastructure"
+ },
+ "count" : {
+  "CountUp1" : "Work in progress",
+  "CountUp2" : "Former clients",
+  "CountUp3" : "Former Staff",
+  "CountUp4" : "Projects delivered"
+ },
+ "contact" : {
+  "label-name" : "Write Your Full name",
+  "placeholder-name" : "Full name here",
+  "label-mail" : "Write Your Mail Address",
+  "placeholder-mail" : "example@example.com",
+  "label-phone" : "Your Phone Number",
+  "placeholder-phone" : "Phone Number",
+  "label-massege" : "Project Details",
+  "send":"SEND",
+  "or" : "OR" ,
+  "us" : "You Can Contact Us Through"
+ },
+ "fotter" : {
+  "title-sitmap" : "SITMAP",
+  "title-help" : "Help",
+  "title-governmental" : "Governmental bodies",
+  "title-partners" : "partners",
+  "title-subscribe" : "Subscribe for newslatter",
+  "title-Follow" : "Follow us on",
+  "title-name" : "Bader Group 2022",
+  "terms" : "TERMS & CONDITIONS",
+  "cookies" : "COOKIES" ,
+  "privacy" : "PRIVACY"
+ }
+
+
  
 }

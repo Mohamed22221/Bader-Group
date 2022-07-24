@@ -41,21 +41,21 @@ const Fotter = () => {
           <img src={LogoFotter} alt="LogoFotter" />
         </div>
         <div className='column'>
-        <h3>SITMAP</h3>
-        <NavLink to="/Bader-Group">Home{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
-        <NavLink to="/about">About us{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
+        <h3>{t("fotter.title-sitmap")}</h3>
+        <NavLink to="/Bader-Group">{t("nav.home")}{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
+        <NavLink to="/about">{t("nav.about")}{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
 
-        <NavLink to="/projects" >Our Projects{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
-        <NavLink to="/sector">Our Sector{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
+        <NavLink to="/projects" >{t("nav.projects")}{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
+        <NavLink to="/sector">{t("nav.our-sector")}{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
         </div>
         <div className='column'>
-        <h3>Help</h3>
-        <a href='#Contact'>Contact Us{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</a>
-        <a href='#'>FAQ{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</a>
-        <a href='#'>Policies{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</a>
+        <h3>{t("fotter.title-help")}</h3>
+        <a href='#Contact'>{t("nav.contact-us")}{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</a>
+        <a href='#'>{t("nav.faq")}{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</a>
+        <a href='#'>{t("nav.policies")}{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</a>
         </div>
         <div className='ministries'>
-        <h3>Governmental bodies</h3>
+        <h3>{t("fotter.title-governmental")}</h3>
           <div className='ministries-line'>
             
             <img src={ministry1} alt="ministry1" />
@@ -64,7 +64,7 @@ const Fotter = () => {
             <img src={ministry4} alt="ministry4" />
             <img src={ministry5} alt="ministry5" />
           </div>
-          <h3>partners</h3>
+          <h3>{t("fotter.title-partners")}</h3>
           <div className='ministries-line'>
          
           <img src={partners1} alt="partners1" />
@@ -78,12 +78,12 @@ const Fotter = () => {
         </div>
         <div className='subscribe'>
           <div className='subscribe-line'>
-          <h3>Subscribe for newslatter</h3>
+          <h3>{t("fotter.title-subscribe")}</h3>
           <input placeholder='Subscribe now' />
           <button className={i18n.language === "en"?" btn-right ":" btn-left "}><MdDone /></button>
           </div>
           <div className='subscribe-line'>
-            <h4>Follow us on</h4>
+            <h4>{t("fotter.title-Follow")}</h4>
             <div className='social'>
             <a href='#'><img src={face} alt="face" /></a>
             <a href='#'><img src={linked} alt="linked" /></a>
@@ -96,12 +96,12 @@ const Fotter = () => {
         </div>
         <div className='cookies'>
           <div>
-          <p>Bader Group 2022</p>
+          <p>{t("fotter.title-name")}</p>
           </div>
           <div className='links'>
-          <a href=''>COOKIES</a>
-          <a href=''>PRIVACY</a>
-          <a href=''>TERMS & CONDITIONS</a>
+          <a href=''>{t("fotter.terms")}</a>
+          <a href=''>{t("fotter.cookies")}</a>
+          <a href=''>{t("fotter.title-privacy")}</a>
 
           </div>
         </div>

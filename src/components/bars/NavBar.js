@@ -30,7 +30,7 @@ const NavBar = () => {
   
   
   return (
-    <div className='main-nav'>
+    <div  className='main-nav'>
      <Container maxWidth="xl">
       <div className='navbar'>
      
@@ -39,17 +39,17 @@ const NavBar = () => {
      </div>
      <nav className={`${toggle ===false ?" links " :" links links--open "}`}>
       <ul>
-       <NavLink to="/Bader-Group" onClick={HandelCloseMenu}><li >Home</li></NavLink>
-       <NavLink to="/about" onClick={HandelCloseMenu}><li>About US</li></NavLink>
-       <NavLink to="/projects" onClick={HandelCloseMenu}><li>Projects</li></NavLink>
-       <NavLink to="/sector" onClick={HandelCloseMenu}><li>Our Sector</li></NavLink>
+       <NavLink to="/Bader-Group" onClick={HandelCloseMenu}><li >{t("nav.home")}</li></NavLink>
+       <NavLink to="/about" onClick={HandelCloseMenu}><li>{t("nav.about")}</li></NavLink>
+       <NavLink to="/projects" onClick={HandelCloseMenu}><li>{t("nav.projects")}</li></NavLink>
+       <NavLink to="/sector" onClick={HandelCloseMenu}><li>{t("nav.our-sector")}</li></NavLink>
       </ul>
      
      <div className='buttons'>
       {i18n.language == "en" && <button onClick={languageAR}>العربيه<MdLanguage className='icon' /></button>}
       {i18n.language == "ar" && <button onClick={languageEn}>الانجليزيه<MdLanguage className='icon' /></button>}
 
-      <button><a href='#Contact'>Contact us</a></button>
+      <button><a href='#Contact'>{t("nav.contact-us")}</a></button>
      </div>
      </nav>
      <div className='menu-icon' onClick={HandelTogell} >

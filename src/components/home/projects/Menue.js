@@ -30,4 +30,4 @@ const Menue = ({menueItem}) => {
   )
 }
 
-export default memo(Menue)
+export default Menue

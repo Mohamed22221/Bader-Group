@@ -3,8 +3,12 @@ import Container from '@mui/material/Container';
 import "./Counter.scss"
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
+import { useTranslation } from 'react-i18next'
+
 
 const Counter = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className='main-counter glopal-margin'>
      <span className='line1'></span>
@@ -21,7 +25,7 @@ const Counter = () => {
               </VisibilitySensor>
             )}
       </CountUp>
-       <h2>Work in progress</h2>
+       <h2>{t("count.CountUp1")}</h2>
       </div>
       <div>
         <span>+</span>
@@ -32,7 +36,7 @@ const Counter = () => {
               </VisibilitySensor>
             )}
       </CountUp>
-       <h2>Former clients</h2>
+       <h2>{t("count.CountUp2")}</h2>
       </div>
       <div>
         <span>+</span>
@@ -43,7 +47,7 @@ const Counter = () => {
               </VisibilitySensor>
             )}
       </CountUp>
-       <h2>Former Staff</h2>
+       <h2>{t("count.CountUp3")}</h2>
       </div>
       <div>
         <span>+</span>
@@ -54,7 +58,7 @@ const Counter = () => {
               </VisibilitySensor>
             )}
       </CountUp>
-       <h2>Projects delivered</h2>
+       <h2>{t("count.CountUp4")}</h2>
       </div>
      </Container>
      

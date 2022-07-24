@@ -6,9 +6,11 @@ import  Face from "../../../assets/Iconfacebook-black.svg"
 import  Linked from "../../../assets/Iconlinkedin-black.svg"
 import  Twitter from "../../../assets/Icontwitter-black.svg"
 import  Mail from "../../../assets/Iconmail-black.svg"
+import { useTranslation } from 'react-i18next'
 
 
 const Contact = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div className='main-contact glopal-margin' id='Contact'>
      <Container maxWidth="xl"  >
@@ -17,34 +19,34 @@ const Contact = () => {
         <div className='form-apout'>
 
          <div className='item item-about'>
-          <label>Write Your Full name</label>
-          <input placeholder='Full name here' type="name"/>
+          <label>{t("contact.label-name")}</label>
+          <input placeholder={t("contact.placeholder-name")} type="name"/>
          </div>
 
          <div className='item item-about'>
-          <label>Write Your Mail Address</label>
-          <input placeholder='example@example.com' type="email"/>
+          <label>{t("contact.label-mail")}</label>
+          <input placeholder={t("contact.placeholder-mail")} type="email"/>
         </div>
 
         </div>
         
         <div className='item form-number'>
-         <label>Your Phone Number</label>
+         <label>{t("contact.label-phone")}</label>
 
          <div className='item-number'>
           <input placeholder='+955' type="number"/>
-          <input placeholder='Phone Number' type="number"/>
+          <input placeholder={t("contact.placeholder-phone")} type="number"/>
         </div>
 
         </div>
         <div className='item item-massege'>
-         <label>Project Details</label>
+         <label>{t("contact.label-massege")}</label>
          <textarea name="comment" form="usrform" />
         </div>
-        <button>SEND</button>
+        <button>{t("contact.send")}</button>
         <div className='social'>
-         <p>OR</p>
-         <h4>You Can Contact Us Through</h4>
+         <p>{t("contact.or")}</p>
+         <h4>{t("contact.us")}</h4>
          <div className='my-social'>
           <a href='#'><img src={Face} /></a>
           <a href='#'><img src={Twitter} /></a>
