@@ -4,15 +4,13 @@ import { Container } from '@mui/material'
 import "./Projects.scss"
 import Menue from './Menue'
 import data from "./AllData"
-import { useTranslation } from 'react-i18next'
 
 const Projects = () => {
   const [menueItem , setMenueItem] = useState(data)
-  const { t, i18n } = useTranslation();
   const Filter = useMemo(()=> (button) =>{
     
 
-    if(button === t("filter.btn-1") ){
+    if(button === "All work" ){
       setMenueItem(data)
       return;
     }

@@ -6,11 +6,14 @@ import ProjectsComponent from "../components/home/projects/Projects"
 import Counter from '../components/home/counter/Counter'
 import DottedLine from '../components/glopal/DottedLine'
 import Partener from '../components/home/partner/Partener'
+import { useTranslation } from 'react-i18next'
 
 const Sectors = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
-    <HeaderSec_1 title="Our Sectors"  />
+    <HeaderSec_1 title={t("sector.our-sectors")}  />
     <AboutSector />
     <Identification />
     <ProjectsComponent />

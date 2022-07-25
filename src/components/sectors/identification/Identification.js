@@ -2,8 +2,12 @@ import React from 'react'
 import { Container } from '@mui/material'
 import "./Identification.scss"
 import newkuwait from '../../../assets/newkuwait.png'
-
+import { useTranslation } from 'react-i18next'
 const Identification = () => {
+
+
+  const { t, i18n } = useTranslation();
+
   return (
     <div className='glopal-margin main-identification'>
       <Container maxWidth="xl" className='container-identification' >
@@ -13,9 +17,9 @@ const Identification = () => {
 
      </div>
       <div className='identification-item right-identification'>
-      <h1>Bader Construction Group For General </h1>
-      <p> Our culture is based on integrity and mutual respect. Our  reputation in adherence to the highest ethics in work is one of our valuable rules. </p>
-      <p>We undertake the responsibility of each work we perform. In Bader Construction Group, we do not tolerate any wrong behavior and ask our employees to adhere such standards and the applicable local acts.</p>
+      <h1>{t("sector.title-identification")}</h1>
+      <p>{t("sector.p1-identification")} </p>
+      <p>{t("sector.p2-identification")}</p>
       </div>
       
       </Container>

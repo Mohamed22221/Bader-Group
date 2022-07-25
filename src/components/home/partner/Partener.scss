@@ -4,8 +4,8 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  &::after{
-   content: "Success Partners";
+  span{
+   
    display: flex;
    justify-content: center;
    align-items: center;
@@ -21,6 +21,10 @@
    margin: auto;
    font-size: 25px;
    color: white;
+   @media (max-width:780px) {
+    z-index: 1;
+   }
+
 
   }
   .one-ministey{

@@ -7,22 +7,25 @@ import image3 from "../../assets/img12.png"
 import DottedLine from "../glopal/DottedLine"
 import { Container } from '@mui/material'
 import ButtonLink from '../glopal/ButtonLink'
+import { useTranslation } from 'react-i18next'
 
 const Sec_1 = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className='glopal-margin' >
-            
-<div  className='Video_sec'>
-<Container maxWidth="xl">
-<h5 className='aboutus-sec1'>Kuwait Vision 2035</h5>
 
-      <div className='container '>
-      <video  src={video1} muted type="video/mp4" autoPlay={true} preload="auto" loop></video>
-</div>
+      <div className='Video_sec'>
+        <Container maxWidth="xl">
+          <h5 className='aboutus-sec1'>{t("about.title-sec2")}</h5>
 
-</Container>
-     
-</div>
+          <div className='container '>
+            <video src={video1} muted type="video/mp4" autoPlay={true} preload="auto" loop></video>
+          </div>
+
+        </Container>
+
+      </div>
 
 
     </div>

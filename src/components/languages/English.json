@@ -1,4 +1,8 @@
+
 {
+ "global" : {
+  "success" : "Success Partners"
+ },
  "nav" : {
   "home" : "Home",
   "about" : "About US",
@@ -20,6 +24,7 @@
   "button-about" : "Read More"
  },
  "filter" : {
+  "our-project" : "our projects" ,
   "btn-1" : "All work",
   "btn-2" : "Residential",
   "btn-3" : "Infrastructure"
@@ -53,6 +58,31 @@
   "terms" : "TERMS & CONDITIONS",
   "cookies" : "COOKIES" ,
   "privacy" : "PRIVACY"
+ },
+ "about" : {
+  "title-header" : "Our Vision",
+  "paragraph-header" : "In accordance with the modern vision and development plan, we were the pioneers and the ones who first took the initiative of its kind, our knowledge and expertise in the management of our agencies helped our agencies avoid any current or future risks as we provide special and distinctive services for each agency separately which corroborate with its specialty and its scope of work, and all this under effective management which is run by our specialized team that I have appointed with great care, they work round the clock to make sure that each agency receives the proper services it needs and we don’t stop serving each and every agency with what is required to achieve success. Along with our paramount agencies, we have the ability to see and envision becoming the leading construction firm, while delivering projects that consistently exceed international standards and provide exceptional customer satisfaction. Together with our agencies" ,
+  "title-sec2": "Kuwait Vision 2035",
+  "title-sec3" : "Why Bader Group?",
+  "paragraph-sec3" : "Through our long experience in this field, we always make certain that those international companies (Agencies) do not encounter any obstacles, which may hinder their work during the completion of their projects. Our work team is assigned to provide consultancy and legal services, administrative, engineering, and logistical services, as well as designating a public relations department, which has a strong network of relationships with all government departments, ministries, including petroleum companies (KOC & KNPC), and private sector companies... ",
+  "name-doctor" : "Dr. Abdul Wahab Al Atwan" ,
+  "about-doctor" : "PRESIDENT OF BADER GROUP" ,
+  "paragraph-doctor" : "Based on the insightful and future vision of the rational Kuwaiti government and the development plan for 2020/2035, which the State of Kuwait seeks to move forward to achieve its aiming goals in line with keeping pace with the global development so as to rise above in which gives a good name to the State of Kuwait in all international forums through the system of partnership and global cooperation between countries and global companies to gain and exchange Experiences in all fields and specialties, such as (petroleum services – infrastructure projects – housing projects – roads and bridges projects – high-rise towers – major marketing & commercial complexes – power stations – water distillation & purification, etc.), and through our integrated expertise in providing services and helping support to these international companies in order to achieve our objective, and to be aspired by our desired benefit and achieve great success in the State of Kuwait." ,
+  "paragraph-sec4" : "We show you our development plan and ways to participate in direct investment in Kuwait"
+
+ },
+ "sector" : {
+  "our-sectors" : "Our Sectors" , 
+  "title-header-1" : "Our Vision",
+  "paragraph-header-1" : "To be one of the leading companies in the region in various fields. – Our clients and partners shall find what completes their success. We expect their needs and fulfill them according to our self-commitment – Everyone shall be proud to work with Bader Construction Group. We create chances to achieve exceptional results and reward success. – Society shall consider us responsible and effective.",
+  "title-header-2" : "Our ethics",
+  "paragraph-header-2" : "Our culture is based on integrity and mutual respect. Our reputation in adherence to the highest ethics in work is one of our valuable rules. We undertake the responsibility of each work we perform. In Bader Construction Group, we do not tolerate any wrong behavior and ask our employees to adhere such standards and the applicable local acts." ,
+  "title-identification" : "Bader Construction Group For General" ,
+  "p1-identification" : "Our culture is based on integrity and mutual respect. Our  reputation in adherence to the highest ethics in work is one of our valuable rules." ,
+  "p2-identification" : "We undertake the responsibility of each work we perform. In Bader Construction Group, we do not tolerate any wrong behavior and ask our employees to adhere such standards and the applicable local acts." 
+
+
+
  }
 
 
