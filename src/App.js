@@ -18,6 +18,7 @@ function App() {
   const [Dir , setDir] = useState("ltr")
   const [language , setLang] = useState("en")
   return (
+    
     <div dir={i18n.language == "en" ? Dir : "rtl"} lang={i18n.language == "en" ? language : "ar"} className={i18n.language == "en" ? "body en" : "body ar"}>
       <ScrollToTop />
       <ScrollTop />
@@ -31,6 +32,7 @@ function App() {
       <Contact />
       <Fotter />
     </div>
+    
 
   );
 }
