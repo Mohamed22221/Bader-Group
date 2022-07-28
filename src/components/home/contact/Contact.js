@@ -51,7 +51,7 @@ const Contact = () => {
           country : ""
         })
       }).catch(err => {
-        console.log(err)
+        addToast("حدث خظأ", { appearance: 'error' });
  
       })
 
