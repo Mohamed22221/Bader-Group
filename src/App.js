@@ -11,9 +11,9 @@ import Sectors from "./bages/Sectors";
 import { useState ,useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
-
+import Gleap from "gleap";
 function App() {
-
+  Gleap.initialize("3W2XAMmPOWwHetgDhQATvzCzJn6tGtsl");
   //state toggle language En & Ar 
   const { t, i18n } = useTranslation();
   const [Dir , setDir] = useState("ltr")
