@@ -3,7 +3,6 @@ import Buttons from './Buttons'
 import { Container } from '@mui/material'
 import "./Projects.scss"
 import Menue from './Menue'
-import data from "./AllData"
 import axios from "axios";
 
 const Projects = () => {
@@ -28,11 +27,6 @@ const Projects = () => {
     }
       const FilterdData = categories.filter((item=> item.category_id == button ))
       setCategories(FilterdData )
-      console.log(FilterdData )
-
-    
-
-
     return categories
    
   }

@@ -8,7 +8,7 @@ import DottedLine from '../components/glopal/DottedLine'
 import Partener from '../components/home/partner/Partener'
 import { useTranslation } from 'react-i18next'
 
-const Sectors = () => {
+const Sectors = ({counter}) => {
   const { t, i18n } = useTranslation();
 
   return (
@@ -18,7 +18,7 @@ const Sectors = () => {
     <Identification />
     <ProjectsComponent />
     <DottedLine />
-    <Counter />
+    <Counter counter={counter} />
     <DottedLine />
     <Partener />
     </>

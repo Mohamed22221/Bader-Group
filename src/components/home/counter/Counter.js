@@ -6,7 +6,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import { useTranslation } from 'react-i18next'
 
 
-const Counter = () => {
+const Counter = ({counter}) => {
   const { t, i18n } = useTranslation();
 
   return (
@@ -16,50 +16,23 @@ const Counter = () => {
      <span className='line3'></span>
 
      <Container maxWidth="xl" className='container'>
-      <div>
-        <span>+</span>
-      <CountUp className="content" end={550} duration={0.8} redraw={true}>
+
+        {counter.map(count =>{
+          return (
+            <div key={count.key}>
+            <span>+</span>
+            <CountUp className="content" end={count.number} duration={0.8} redraw={true}>
             {({ countUpRef, start }) => (
               <VisibilitySensor onChange={start} delayedCall>
                 <span ref={countUpRef} />
               </VisibilitySensor>
             )}
-      </CountUp>
-       <h2>{t("count.CountUp1")}</h2>
-      </div>
-      <div>
-        <span>+</span>
-      <CountUp className="content" end={950} duration={0.8} redraw={true}>
-            {({ countUpRef, start }) => (
-              <VisibilitySensor onChange={start} delayedCall>
-                <span ref={countUpRef} />
-              </VisibilitySensor>
-            )}
-      </CountUp>
-       <h2>{t("count.CountUp2")}</h2>
-      </div>
-      <div>
-        <span>+</span>
-      <CountUp className="content" end={650} duration={0.8} redraw={true}>
-            {({ countUpRef, start }) => (
-              <VisibilitySensor onChange={start} delayedCall>
-                <span ref={countUpRef} />
-              </VisibilitySensor>
-            )}
-      </CountUp>
-       <h2>{t("count.CountUp3")}</h2>
-      </div>
-      <div>
-        <span>+</span>
-      <CountUp className="content" end={1050} duration={0.8} redraw={true}>
-            {({ countUpRef, start }) => (
-              <VisibilitySensor onChange={start} delayedCall>
-                <span ref={countUpRef} />
-              </VisibilitySensor>
-            )}
-      </CountUp>
-       <h2>{t("count.CountUp4")}</h2>
-      </div>
+           </CountUp>
+            <h2>{i18n.language ==="en" ? count.name_en : count.name_ar}</h2>
+            </div>
+
+          )
+        })}
      </Container>
      
      </div>

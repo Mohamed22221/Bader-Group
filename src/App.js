@@ -8,15 +8,28 @@ import Projects from "./bages/Projects";
 import ScrollToTop from "./ScrollToTop";
 import ScrollTop from "./components/glopal/ScrollTop";
 import Sectors from "./bages/Sectors";
-import { use } from "i18next";
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import axios from "axios";
+
 function App() {
 
   //state toggle language En & Ar 
   const { t, i18n } = useTranslation();
   const [Dir , setDir] = useState("ltr")
   const [language , setLang] = useState("en")
+  //get general api 
+  const [counter, setCounter] = useState([]);
+  const [social, setsocial] = useState([]);
+
+  useEffect(() => {
+    axios.get(`https://bcg.000itkw.com/api/settings`).then(response =>{
+      setCounter(response.data.data.counters)
+      setsocial(response.data.data)
+    })
+  }, [])
+console.log(social)
+
   return (
     
     <div dir={i18n.language == "en" ? Dir : "rtl"} lang={i18n.language == "en" ? language : "ar"} className={i18n.language == "en" ? "body en" : "body ar"}>
@@ -24,10 +37,10 @@ function App() {
       <ScrollTop />
       <NavBar />
       <Routes>
-        <Route path="Bader-Group" element={<Home />} />
+        <Route path="Bader-Group" element={<Home counter={counter} />} />
         <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
-        <Route path="sector" element={<Sectors />} />
+        <Route path="sector" element={<Sectors counter={counter} />} />
       </Routes>
       <Contact />
       <Fotter />

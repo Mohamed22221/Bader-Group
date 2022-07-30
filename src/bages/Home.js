@@ -8,7 +8,7 @@ import Projects from '../components/home/projects/Projects'
 import Partener from '../components/home/partner/Partener'
 
 
-const Home = () => {
+const Home = ({counter}) => {
   return (
     <>
      
@@ -17,7 +17,7 @@ const Home = () => {
      <DottedLine />
      <Projects />
      <DottedLine />
-     <Counter />
+     <Counter counter={counter} />
      <DottedLine />
      <Partener />
      
