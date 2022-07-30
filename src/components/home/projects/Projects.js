@@ -10,23 +10,32 @@ const Projects = () => {
   // get Data axios
   const [categories, setCategories] = useState([]);
   useEffect(() => {
-    axios.get(`https://bcg.000itkw.com/api/categories`).then(response =>{
+    axios.get(`https://bcg.000itkw.com/api/sliders`).then(response =>{
       setCategories(response.data.data)
+
     })
   }, [])
+
+
+
   
   //filter data
-  const [menueItem , setMenueItem] = useState(data)
-  const Filter = useMemo(()=> (button) =>{
-    if(button === "All work" ){
-      setMenueItem(data)
+  
+  const Filter =  (button) =>{
+    if(button === "All" ){
+        setCategories(categories)
       return;
     }
-    const FilterdData = data.filter(item => item.type == button)
-    setMenueItem(FilterdData )
-    return menueItem
+      const FilterdData = categories.filter((item=> item.category_id == button ))
+      setCategories(FilterdData )
+      console.log(FilterdData )
+
+    
+
+
+    return categories
    
-  })
+  }
   
 
   return (

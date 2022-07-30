@@ -3,13 +3,12 @@ import { useTranslation } from 'react-i18next'
 
 const Buttons = ({Filter}) => {
    const { t, i18n } = useTranslation();
-   console.log("ssss")
  const [stateData , setStateData] = useState({
   active:null,
   ButtonsFilter : [
-   { id: 1, name: "All work", title: t("filter.btn-1") },
-   { id: 2, name: "Residential", title: t("filter.btn-2") },
-   { id: 3, name: "Infrastructure", title: t("filter.btn-3") },
+   { id: 1, name: "All", title: t("filter.btn-1") },
+   { id: 2, name: "1", title: t("filter.btn-2") },
+   { id: 3, name: "1", title: t("filter.btn-3") },
 
 ]
  })

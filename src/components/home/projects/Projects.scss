@@ -24,15 +24,19 @@
    
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
+  @media (max-width: 880px) {
+   flex-direction: column;
+
+  }
+
 
  }
 
  .menu-item{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+
+  flex-wrap: wrap;
+  width: 50%;
   margin: 30px ;
   position: relative;
   gap: 40px;
@@ -41,6 +45,7 @@
    width: 359.5px;
   }
   @media (max-width: 880px) {
+   width: 100%;
    flex-direction: column;
    img{
     width: 280px;
@@ -63,11 +68,11 @@
   @media (max-width: 580px) {
    .rec-arrow-right{
     position: absolute;
-    right: -12px;
+    right: 0px;
    }
    .rec-arrow-left{
     position: absolute;
-    left: -12px;
+    left: 0px;
    }
   }
 
