@@ -57,7 +57,7 @@ const Contact = () => {
 
       
   }
-  console.log(post)
+
 
   return (
     <div className='main-contact glopal-margin' id='Contact'>
@@ -89,7 +89,7 @@ const Contact = () => {
         </div>
         <div className='item item-massege'>
          <label>{t("contact.label-massege")}</label>
-         <textarea name="reviews" value={post.messages}  onChange={(e) =>setPost({...post , messages:e.target.value})} rows="11" cols="50" maxlength="250" required ></textarea>
+         <textarea name="reviews" value={post.messages}  onChange={(e) =>setPost({...post , messages:e.target.value})}   required ></textarea>
         </div>
         <button>{t("contact.send")}</button>
         <div className='social'>

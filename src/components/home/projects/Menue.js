@@ -1,26 +1,34 @@
-import React ,{memo} from 'react'
+import React ,{useEffect,useState} from 'react'
 import Carousel from "react-elastic-carousel";
-const Menue = ({menueItem}) => {
+import axios from "axios";
+  //get data api
+const Menue = ({categories}) => {
+
   return (
     <div className='menu'>
-     {
-     menueItem.map(item =>{
+     {categories.map(item =>{
       return (
-       <div className='menu-item' key={item.id}>
-        
-         <Carousel>
-         {
-          item.imges.map(item =>{
-            
-             return (
-            <div className='img-menu' key={item.id}>
-             <img src={item.src} />
-            </div>
-           )
-          })
+       <div className='menu-item' key={item.id} > 
+       {item.sliders.map((item ,index) =>{
+        return (
+          
+          <Carousel key={index}>
+          {item.images.map((img ,index )=>{
+            return (
+              <div key={index} >
+                <img src={img} />
+              </div>
+            )
+  
+          })}
+          </Carousel>
+          
+        )
 
-         }
-         </Carousel>
+
+       })
+       }
+          
         </div>
       
       )
