@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState } from 'react'
 import "./Fotter.scss"
 import { Container } from '@mui/material'
 import LogoFotter from "../../assets/logoFotter.svg"
@@ -26,12 +26,39 @@ import mail from "../.././assets/Iconmail.svg"
 import twitter from "../.././assets/Icontwitter.svg"
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
-
+import { useToasts } from 'react-toast-notifications';
+import axios from "axios";
 
 
 
 const Fotter = () => {
   const { t, i18n } = useTranslation();
+  //api subscribe contact 
+  const { addToast } = useToasts();
+  const [post, setPost] = useState({
+    email : "",
+
+  });
+  function createPost(e) {
+
+    e.preventDefault()
+    axios.post("https://bcg.000itkw.com/api/subscribers", {
+      email: post.email,
+
+      }).then((response) => {
+        setPost(response.data);
+        addToast("تم الاشتراك بنجاح.", { appearance: 'success' });
+        console.log(response.data)
+        setPost({
+          email : "",
+
+        })
+      }).catch(err => {
+        addToast("حدث خظأ", { appearance: 'error' });
+      })
+
+      
+  }
 
   return (
     <div className='main-fotter'>
@@ -44,7 +71,6 @@ const Fotter = () => {
         <h3>{t("fotter.title-sitmap")}</h3>
         <NavLink to="/Bader-Group">{t("nav.home")}{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
         <NavLink to="/about">{t("nav.about")}{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
-
         <NavLink to="/projects" >{t("nav.projects")}{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
         <NavLink to="/sector">{t("nav.our-sector")}{i18n.language === "ar"?<BsArrowLeft />:<BsArrowRight/>}</NavLink>
         </div>
@@ -77,11 +103,13 @@ const Fotter = () => {
 
         </div>
         <div className='subscribe'>
-          <div className='subscribe-line'>
+
+
+          <form className='subscribe-line' onSubmit={createPost}>
           <h3>{t("fotter.title-subscribe")}</h3>
-          <input placeholder='Subscribe now' />
+          <input placeholder='Subscribe now' type="email" value={post.email} onChange={(e)=>setPost({...post , email:e.target.value})} required />
           <button className={i18n.language === "en"?" btn-right ":" btn-left "}><MdDone /></button>
-          </div>
+          </form>
           <div className='subscribe-line'>
             <h4>{t("fotter.title-Follow")}</h4>
             <div className='social'>

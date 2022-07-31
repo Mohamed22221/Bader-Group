@@ -18,10 +18,11 @@ const ScrollTop = () => {
 const ScrollTopIcon = styled.div`
 position: fixed;
 z-index: 100;
-bottom:100px;
+bottom:50px;
 right: 50px;
 @media (max-width:768px) {
-display: none;
+right: 20px;
+bottom: 30px;
 }
 svg{
     color: var(--primary-color);

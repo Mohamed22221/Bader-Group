@@ -52,7 +52,6 @@ const Contact = () => {
         })
       }).catch(err => {
         addToast("حدث خظأ", { appearance: 'error' });
- 
       })
 
       
