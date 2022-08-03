@@ -2,7 +2,7 @@ import React, {useState, useEffect } from 'react'
 import { Container } from '@mui/material'
 import "./Contact.scss"
 import axios from "axios";
-import  bgContact from "../../../assets/bg-contact.svg"
+import  bgContact from "../../../assets/contact.png"
 import  Face from "../../../assets/Iconfacebook-black.svg"
 import  Linked from "../../../assets/Iconlinkedin-black.svg"
 import  Twitter from "../../../assets/Icontwitter-black.svg"
