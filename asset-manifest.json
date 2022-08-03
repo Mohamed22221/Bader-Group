@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/Bader-Group/static/css/main.a15567b0.css",
-    "main.js": "/Bader-Group/static/js/main.d23ebbfc.js",
+    "main.js": "/Bader-Group/static/js/main.7c216608.js",
     "static/media/video1.mp4": "/Bader-Group/static/media/video1.cab45ae9134e126a5bf5.mp4",
-    "static/media/homeAbout.png": "/Bader-Group/static/media/homeAbout.54bcec3e26586988e35b.png",
+    "static/media/homeAbout.png": "/Bader-Group/static/media/homeAbout.faa4776a6b90dd2702ef.png",
     "static/media/engineer.jpg": "/Bader-Group/static/media/engineer.302de117f6c4c20238d4.jpg",
     "static/media/archi.jpg": "/Bader-Group/static/media/archi.79a45b73e2115528f56d.jpg",
     "static/media/bg-projects.png": "/Bader-Group/static/media/bg-projects.3b8c9313ffb35478d3cb.png",
@@ -45,10 +45,10 @@
     "static/media/Iconfacebook-black.svg": "/Bader-Group/static/media/Iconfacebook-black.3e9fe20c509bd0efdb6ca41fae557969.svg",
     "static/media/dottedLine.svg": "/Bader-Group/static/media/dottedLine.9773a5d6e478ef174e748cc2638fe274.svg",
     "main.a15567b0.css.map": "/Bader-Group/static/css/main.a15567b0.css.map",
-    "main.d23ebbfc.js.map": "/Bader-Group/static/js/main.d23ebbfc.js.map"
+    "main.7c216608.js.map": "/Bader-Group/static/js/main.7c216608.js.map"
   },
   "entrypoints": [
     "static/css/main.a15567b0.css",
-    "static/js/main.d23ebbfc.js"
+    "static/js/main.7c216608.js"
   ]
 }
