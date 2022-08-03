@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/Bader-Group/static/css/main.2e996877.css",
-    "main.js": "/Bader-Group/static/js/main.e60d538e.js",
+    "main.css": "/Bader-Group/static/css/main.a15567b0.css",
+    "main.js": "/Bader-Group/static/js/main.e37f56a4.js",
     "static/media/video1.mp4": "/Bader-Group/static/media/video1.cab45ae9134e126a5bf5.mp4",
-    "static/media/project1.svg": "/Bader-Group/static/media/project1.5ed6bee0c20abadf654924fc03055ea4.svg",
-    "static/media/project2.svg": "/Bader-Group/static/media/project2.7c4f3af2b12e92c1b8829717d6063c7e.svg",
+    "static/media/homeAbout.png": "/Bader-Group/static/media/homeAbout.54bcec3e26586988e35b.png",
+    "static/media/engineer.jpg": "/Bader-Group/static/media/engineer.302de117f6c4c20238d4.jpg",
+    "static/media/archi.jpg": "/Bader-Group/static/media/archi.79a45b73e2115528f56d.jpg",
     "static/media/bg-contact.svg": "/Bader-Group/static/media/bg-contact.a4ef8c711e7ee7e24f6d5a497566c278.svg",
-    "static/media/about2.png": "/Bader-Group/static/media/about2.616ef43a39ce911b96fb.png",
     "static/media/bg-projects.png": "/Bader-Group/static/media/bg-projects.3b8c9313ffb35478d3cb.png",
     "static/media/aboutus-image2.png": "/Bader-Group/static/media/aboutus-image2.121d90507cc0464012bc.png",
     "static/media/Subtraction 1.png": "/Bader-Group/static/media/Subtraction 1.9d9fe5a3c377bf05064b.png",
@@ -44,11 +44,11 @@
     "static/media/Iconfacebook.svg": "/Bader-Group/static/media/Iconfacebook.e0cddd6877093cd2c47c0aadd9de045a.svg",
     "static/media/Iconfacebook-black.svg": "/Bader-Group/static/media/Iconfacebook-black.3e9fe20c509bd0efdb6ca41fae557969.svg",
     "static/media/dottedLine.svg": "/Bader-Group/static/media/dottedLine.9773a5d6e478ef174e748cc2638fe274.svg",
-    "main.2e996877.css.map": "/Bader-Group/static/css/main.2e996877.css.map",
-    "main.e60d538e.js.map": "/Bader-Group/static/js/main.e60d538e.js.map"
+    "main.a15567b0.css.map": "/Bader-Group/static/css/main.a15567b0.css.map",
+    "main.e37f56a4.js.map": "/Bader-Group/static/js/main.e37f56a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e996877.css",
-    "static/js/main.e60d538e.js"
+    "static/css/main.a15567b0.css",
+    "static/js/main.e37f56a4.js"
   ]
 }
