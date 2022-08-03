@@ -4,6 +4,13 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  align-items: center;
+  span{
+   font-weight: bold;
+   color: var(--primary-color);
+   font-size: 37px;
+   padding: 5px;
+  }
   @media (max-width:550px) {
    justify-content: center;
 

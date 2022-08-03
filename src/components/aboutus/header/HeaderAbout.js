@@ -1,6 +1,6 @@
 import { Container } from '@mui/material'
 import React from 'react'
-import slider1 from "../../../assets/project1.svg"
+import slider1 from "../../../assets/homeAbout.png"
 import "./HeaderAbout.scss"
 import { useTranslation } from 'react-i18next'
 

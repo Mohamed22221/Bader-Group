@@ -31,7 +31,8 @@ overflow: hidden;
 }
  .container-sector{
   display: flex;
-justify-content: space-between; 
+  justify-content: space-between; 
+  gap: 10px 30px;
 @media (max-width:963px) {
  flex-direction: column;
 }
@@ -40,8 +41,13 @@ justify-content: space-between;
 .sector-item{
  width: 50%;
  img{
+  
   width: 100%;
-  padding:20px 50px;
+  height: 600px;
+  box-shadow: 1px 3px 10px 3px rgba(196,196,196,0.75);
+  -webkit-box-shadow: 1px 3px 10px 3px rgba(196,196,196,0.75);
+  -moz-box-shadow: 1px 3px 10px 3px rgba(196,196,196,0.75);
+  margin-top: 15px;
  }
  p{
   color: var(--font);
@@ -58,6 +64,8 @@ justify-content: space-between;
   width: 100%;
   img{
    padding: 20px;
+   height: 450px;
+
   }
   p,h1{
    padding: 20px;

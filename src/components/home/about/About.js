@@ -1,6 +1,6 @@
 import React from 'react'
 import "./About.scss"
-import video1 from "../../../assets/video1.mp4"
+import homeAbout from "../../../assets/homeAbout.png"
 import { Container } from '@mui/material'
 import ButtonLink from '../../glopal/ButtonLink'
 import { NavLink } from "react-router-dom";
@@ -20,7 +20,7 @@ const About = () => {
        <NavLink to="/about"><ButtonLink title={t("sec-about.button-about")} /></NavLink> 
       </div>
       <div className='right-about'>
-      <video  src={video1} muted type="video/mp4" autoPlay={true} preload="auto" loop></video>
+      <img  src={homeAbout} ></img>
       </div>
       </div>
      </Container>

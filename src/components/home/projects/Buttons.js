@@ -40,10 +40,12 @@ const Buttons = ({Filter}) => {
   return (
     
      <div className='buttons-filter'>
+      <span>our Projects</span>
       {
       stateData.ButtonsFilter.map((item ,index) =>{
         return (
          <div key={item.id} >
+         
          <button onClick={()=>HandelClickFilter(item ,index)} className={HandellClassName(index)} >{item.title}</button>
         </div>
         )
