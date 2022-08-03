@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Bader-Group/static/css/main.a15567b0.css",
-    "main.js": "/Bader-Group/static/js/main.e37f56a4.js",
+    "main.js": "/Bader-Group/static/js/main.d23ebbfc.js",
     "static/media/video1.mp4": "/Bader-Group/static/media/video1.cab45ae9134e126a5bf5.mp4",
     "static/media/homeAbout.png": "/Bader-Group/static/media/homeAbout.54bcec3e26586988e35b.png",
     "static/media/engineer.jpg": "/Bader-Group/static/media/engineer.302de117f6c4c20238d4.jpg",
     "static/media/archi.jpg": "/Bader-Group/static/media/archi.79a45b73e2115528f56d.jpg",
-    "static/media/bg-contact.svg": "/Bader-Group/static/media/bg-contact.a4ef8c711e7ee7e24f6d5a497566c278.svg",
     "static/media/bg-projects.png": "/Bader-Group/static/media/bg-projects.3b8c9313ffb35478d3cb.png",
     "static/media/aboutus-image2.png": "/Bader-Group/static/media/aboutus-image2.121d90507cc0464012bc.png",
     "static/media/Subtraction 1.png": "/Bader-Group/static/media/Subtraction 1.9d9fe5a3c377bf05064b.png",
     "static/media/header.png": "/Bader-Group/static/media/header.4c4ad8f886f7033b7f32.png",
     "static/media/img12.png": "/Bader-Group/static/media/img12.1a181bcdde8be7a76bb4.png",
+    "static/media/contact.png": "/Bader-Group/static/media/contact.ca3cff0a40619e234f87.png",
     "static/media/aboutus-image1.png": "/Bader-Group/static/media/aboutus-image1.d47d71229dfdd49cd241.png",
     "static/media/foreign.png": "/Bader-Group/static/media/foreign.d7626aa7c2971e860574.png",
     "static/media/newkuwait.png": "/Bader-Group/static/media/newkuwait.ca102160d690a716fdcc.png",
@@ -45,10 +45,10 @@
     "static/media/Iconfacebook-black.svg": "/Bader-Group/static/media/Iconfacebook-black.3e9fe20c509bd0efdb6ca41fae557969.svg",
     "static/media/dottedLine.svg": "/Bader-Group/static/media/dottedLine.9773a5d6e478ef174e748cc2638fe274.svg",
     "main.a15567b0.css.map": "/Bader-Group/static/css/main.a15567b0.css.map",
-    "main.e37f56a4.js.map": "/Bader-Group/static/js/main.e37f56a4.js.map"
+    "main.d23ebbfc.js.map": "/Bader-Group/static/js/main.d23ebbfc.js.map"
   },
   "entrypoints": [
     "static/css/main.a15567b0.css",
-    "static/js/main.e37f56a4.js"
+    "static/js/main.d23ebbfc.js"
   ]
 }
