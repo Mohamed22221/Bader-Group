@@ -4,13 +4,12 @@ import axios from "axios";
   //get data api
 const Menue = ({categories}) => {
 
-
   return (
     <div className='menu'>
      {categories.map(item =>{
       return (
        <div className='menu-item' key={item.id} >
-          <Carousel key={item.id}>
+          <Carousel key={item.category.id}>
           {item.images.map((img ,index )=>{
             return (
               <div key={index} >

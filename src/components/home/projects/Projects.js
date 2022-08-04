@@ -13,31 +13,27 @@ const Projects = () => {
       setCategories(response.data.data)
       
     })
+    
   }, [])
+  console.log("data")
 
-console.log(categories)
+
 
   
   //filter data
   
   const Filter =  (button) =>{
-    if(button === "All" ){
-      
-        setCategories(categories)
-      return;
-    }
       const FilterdData = categories.filter((item=> item.category_id === button ))
       setCategories(FilterdData )
-    return categories
-   
+    
   }
 
-  console.log(...categories)
+
 
   return (
     <div className='projects glopal-margin'>
     <Container maxWidth="xl" >
-      <Buttons Filter={Filter} {...categories} categories={categories}/>
+      <Buttons Filter={Filter}  categories={categories}/>
       <Menue categories={categories}  />
     </Container>
     </div>
