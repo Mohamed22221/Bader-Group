@@ -9,11 +9,66 @@
    padding: 0 20px;
    @media (max-width:780px) {
     width: 100%;
-    padding: 10px;
+    padding: 0 10px;
    }
-   h1{
+   .h1{
+    font-size: 90px;
     color: var(--primary-color);
+    position: relative;
+    z-index: 1;
+    @media (max-width:600px) {
+      font-size: 70px;
+    }
+
+    span{
+      font-size: 65px;
+      color: var(--third-color);
+      @media (max-width:600px) {
+        font-size: 35px;
+      }
+  
+    }
    }
+   .before-en{
+    &::before{
+      content: "";
+      position: absolute;
+      left: -380px;
+      top: 115px;
+      height:50px;
+      width: 575px;
+      background-color: var(--third-color);
+      overflow:visible;
+      z-index: -1;
+      @media (max-width:600px) {
+        left: -420px;
+        height: 40px;
+      }
+
+    }
+    &::first-letter{
+      font-size: 130px;
+    }
+
+   }
+   .before-ar{
+    &::before{
+      content: "";
+      position: absolute;
+      right: -390px;
+      top: 100px;
+      height:50px;
+      width: 575px;
+      background-color: var(--third-color);
+      overflow:visible;
+      z-index: -1;
+      @media (max-width:600px) {
+        right: -440px;
+        height: 40px;
+        top:80px
+      }
+    }
+  }
    p{
     color: var(--font);
     line-height: 30px;
@@ -21,22 +76,25 @@
    }
   }
   .right-slider{
-
+    overflow: hidden;
    padding: 0 20px;
-   @media (max-width:780px) {
 
-    padding: 10px;
-   }
+
    img{
-    height: 640px;
+    height: 700px;
     width: 100%;
     z-index: 1;
     margin: 0 20px;
+    position: relative;
     @media (max-width:580px) {
       width: 350px;
-      height: 450px;
+      height: 350px;
       left: 0;
     }
+
+     @media (max-width:580px) {
+       width: 100%;
+     }
   }
  }
 

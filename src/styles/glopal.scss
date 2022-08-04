@@ -28,7 +28,7 @@ $sans : "Cairo", sans-serif ;
 }
 body{
  
- 
+ overflow: auto;
  &::-webkit-scrollbar {
   width: 10px;
 }

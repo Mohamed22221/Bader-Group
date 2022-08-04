@@ -1,17 +1,19 @@
 import React, { useState  ,useEffect ,memo } from 'react'
 import { useTranslation } from 'react-i18next'
 
-const Buttons = ({Filter}) => {
+const Buttons = ({Filter  ,categories}) => {
    const { t, i18n } = useTranslation();
  const [stateData , setStateData] = useState({
   active:null,
+
   ButtonsFilter : [
    { id: 1, name: "All", title: t("filter.btn-1") },
-   { id: 2, name: "1", title: t("filter.btn-2") },
-   { id: 3, name: "1", title: t("filter.btn-3") },
+   { id: 2, name: 4, title: t("filter.btn-1")},
+   { id: 3, name: 4, title: t("filter.btn-3") },
 
 ]
  })
+ console.log(stateData.ButtonsFilter.name)
  //index element put in => active
  const HandelIndex = (index) =>{
   setStateData({...stateData , active:stateData.ButtonsFilter[index]})

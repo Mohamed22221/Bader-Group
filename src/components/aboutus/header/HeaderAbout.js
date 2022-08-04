@@ -8,10 +8,10 @@ const HeaderAbout = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className='main-slider glopal-margin'>
+    <div className='main-slider '>
      <Container maxWidth="xl" className='container' >
        <div className='left-slider'>
-        <h1>{t("about.title-header")}</h1>
+        <h1 className={i18n.language === "en" ? 'h1 before-en' : 'h1 before-ar'  }>{t("sec-about.about")} <span>{t("sec-about.vision-about")}</span></h1>
         <p>{t("about.paragraph-header")}</p>
        </div>
        <div className='right-slider'>
