@@ -21,7 +21,15 @@ function App() {
   //get general api 
   const [counter, setCounter] = useState([]);
   const [social, setsocial] = useState([]);
-
+  const [categories, setCategories] = useState([]);
+  useEffect(() => {
+    axios.get(`https://bcg.000itkw.com/api/sliders`).then(response =>{
+      setCategories(response)
+      
+    })
+  },[])
+  console.log("categories" ,categories)
+    
   useEffect(() => {
     axios.get(`https://bcg.000itkw.com/api/settings`).then(response =>{
       setCounter(response.data.data.counters)

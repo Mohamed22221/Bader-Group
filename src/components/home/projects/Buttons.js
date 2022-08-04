@@ -4,12 +4,13 @@ import { useTranslation } from 'react-i18next'
 
 const Buttons = ({Filter  ,categories}) => {
    const { t, i18n } = useTranslation();
-
+   const [active , setActive] = useState(false)
 
 
  //click filter && css active
  function HandelClickFilter(item , index) {
  Filter(item.category_id)
+ setActive(item.is_active)
 
  }
 console.log(categories)
@@ -25,7 +26,7 @@ console.log(categories)
         return (
          <div key={item.id} >
          
-         <button onClick={()=>HandelClickFilter(item ,index)} >{item.name_ar}</button>
+         <button className={active === true ? "active" : ""} onClick={()=>HandelClickFilter(item ,index)} >{i18n.language === "en" ? item.name_en : item.name_ar}</button>
         </div>
         )
        })
