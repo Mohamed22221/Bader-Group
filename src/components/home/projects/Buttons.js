@@ -42,7 +42,7 @@ const Buttons = ({Filter  ,categories}) => {
   return (
     
      <div className='buttons-filter'>
-      <span>our Projects</span>
+      <span>{t("filter.our-project")}</span>
       {
       stateData.ButtonsFilter.map((item ,index) =>{
         return (
