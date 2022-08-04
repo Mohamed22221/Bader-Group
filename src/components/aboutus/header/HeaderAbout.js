@@ -16,7 +16,6 @@ const HeaderAbout = () => {
        </div>
        <div className='right-slider'>
         <img src={slider1} alt='right-slider' />
-
        </div>
      </Container>
      </div>
