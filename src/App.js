@@ -12,6 +12,7 @@ import { useState ,useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
 import Gleap from "gleap";
+
 function App() {
   Gleap.initialize("3W2XAMmPOWwHetgDhQATvzCzJn6tGtsl");
   //state toggle language En & Ar 
@@ -22,6 +23,7 @@ function App() {
   const [counter, setCounter] = useState([]);
   const [social, setsocial] = useState([]);
   const [categories, setCategories] = useState([]);
+  
   useEffect(() => {
     axios.get(`https://bcg.000itkw.com/api/sliders`).then(response =>{
       setCategories(response)

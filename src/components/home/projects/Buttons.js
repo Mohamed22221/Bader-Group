@@ -1,4 +1,4 @@
-import React, { useState, useEffect, memo } from 'react'
+import React, { useState, useEffect,  } from 'react'
 import { useTranslation } from 'react-i18next'
 
 const Buttons = ({ Filter, setAllCategories, allCategories }) => {

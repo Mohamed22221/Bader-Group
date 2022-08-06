@@ -17,7 +17,7 @@
    top: 35%;
    transform: translateY(-45%);
    z-index: 1;
-   h1{
+   span{
     font-size: 50px;
     line-height: 60px;
    }
@@ -33,12 +33,12 @@
     padding: 10px;
     top: 85px;
     transform: translateY(0);
-    h1{
+    span{
      font-size: 30px;
      line-height: 50px;
     }
     p{
-     font-size: 14px;
+     font-size: 17px;
      margin-top: 10px;
     }
     button{

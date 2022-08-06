@@ -1,4 +1,4 @@
-import React ,{memo} from 'react'
+import React  from 'react'
 import dottedline from "../../assets/dottedLine.svg"
 const DottedLine = ({title}) => {
   
@@ -9,4 +9,4 @@ const DottedLine = ({title}) => {
     </div>
   )
 }
-export default memo(DottedLine)
+export default DottedLine
