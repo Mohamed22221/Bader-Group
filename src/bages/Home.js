@@ -16,7 +16,7 @@ const Home = ({counter}) => {
      
      <Header />
      <About />
-     <DottedLine title={t("filter.our-project")} />
+     <DottedLine />
      <Projects />
      <DottedLine />
      <Counter counter={counter} />
