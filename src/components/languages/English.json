@@ -26,7 +26,7 @@
  },
  "filter" : {
   "our-project" : "our projects" ,
-  "btn-1" : "All work",
+  "btn-1" : "All",
   "btn-2" : "Residential",
   "btn-3" : "Infrastructure"
  },

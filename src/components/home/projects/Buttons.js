@@ -1,39 +1,44 @@
-import axios from 'axios';
-import React, { useState  ,useEffect ,memo } from 'react'
+import React, { useState, useEffect, memo } from 'react'
 import { useTranslation } from 'react-i18next'
 
-const Buttons = ({Filter  ,categories}) => {
-   const { t, i18n } = useTranslation();
-   const [active , setActive] = useState(false)
-
-
- //click filter && css active
- function HandelClickFilter(item , index) {
- Filter(item.category_id)
- setActive(item.is_active)
-
- }
-console.log(categories)
-
+const Buttons = ({ Filter, setAllCategories, allCategories }) => {
+  const { t } = useTranslation()
+  //index button
+  const HandelIndex = (index) => {
+    setAllCategories({ ...allCategories, sortAcrive: allCategories.DataSort[index] })
+  }
+  //HandellClassName activ && unactive
+  const HandellClassName = (index) => {
+    if (allCategories.DataSort[index] === allCategories.sortAcrive) {
+      return "active"
+    } else {
+      return "unactive"
+    }
+  }
+  //click filter && css active
+  function HandelClickFilter(item, index) {
+    Filter(item)
+    HandelIndex(index)
+  }
 
 
   return (
-    
-     <div className='buttons-filter'>
+
+    <div className='buttons-filter'>
       <span>{t("filter.our-project")}</span>
       {
-      categories.map((item ,index) =>{
-        return (
-         <div key={item.id} >
-         
-         <button className={active === true ? "active" : ""} onClick={()=>HandelClickFilter(item ,index)} >{i18n.language === "en" ? item.name_en : item.name_ar}</button>
-         
-        </div>
-        )
-       })
+        allCategories.DataSort.map((item, index) => {
+          return (
+            <div key={item.id} >
+
+              <button onClick={() => HandelClickFilter(item, index)} className={HandellClassName(index)} >{item}</button>
+
+            </div>
+          )
+        })
       }
-     </div>
-    
+    </div>
+
   )
 }
 

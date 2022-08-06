@@ -6,15 +6,17 @@ import Header from '../components/home/header/Header'
 
 import Projects from '../components/home/projects/Projects'
 import Partener from '../components/home/partner/Partener'
+import { useTranslation } from 'react-i18next'
 
 
 const Home = ({counter}) => {
+  const {t} = useTranslation()
   return (
     <>
      
      <Header />
      <About />
-     <DottedLine />
+     <DottedLine title={t("filter.our-project")} />
      <Projects />
      <DottedLine />
      <Counter counter={counter} />
