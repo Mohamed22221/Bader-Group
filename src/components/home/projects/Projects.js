@@ -7,7 +7,10 @@ import axios from "axios";
 
 const Projects = () => {
   // get Data axios
+
   const [categories, setCategories] = useState([]);
+  
+
   useEffect(() => {
     axios.get(`https://bcg.000itkw.com/api/sliders`).then(response =>{
       setCategories(response.data.data)
@@ -15,17 +18,14 @@ const Projects = () => {
     })
     
   }, [])
-  console.log("data")
 
 
-
-  
   //filter data
   
   const Filter =  (button) =>{
       const FilterdData = categories.filter((item=> item.category_id === button ))
       setCategories(FilterdData )
-    
+      return FilterdData
   }
 
 
@@ -33,7 +33,7 @@ const Projects = () => {
   return (
     <div className='projects glopal-margin'>
     <Container maxWidth="xl" >
-      <Buttons Filter={Filter}  categories={categories}/>
+      <Buttons Filter={Filter}  categories={categories}  />
       <Menue categories={categories}  />
     </Container>
     </div>

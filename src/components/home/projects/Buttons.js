@@ -27,6 +27,7 @@ console.log(categories)
          <div key={item.id} >
          
          <button className={active === true ? "active" : ""} onClick={()=>HandelClickFilter(item ,index)} >{i18n.language === "en" ? item.name_en : item.name_ar}</button>
+         
         </div>
         )
        })

@@ -49,11 +49,17 @@
   gap: 40px;
 
   img{
-   width: 359.5px;
+   width: 380px;
+   height: 350px;
+   box-shadow: 1px 0px 14px -1px rgba(87,87,87,0.75);
+  -webkit-box-shadow: 1px 0px 14px -1px rgba(87,87,87,0.75);
+  -moz-box-shadow: 1px 0px 14px -1px rgba(87,87,87,0.75);
+  border-radius: 10px;
   }
   @media (max-width: 880px) {
    width: 100%;
    flex-direction: column;
+   
    img{
     width: 280px;
    }
