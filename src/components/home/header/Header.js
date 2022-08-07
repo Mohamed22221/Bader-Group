@@ -23,6 +23,7 @@ const Header = () => {
                 autoStart: true,
                 devMode: false,
                 pauseFor : 80000000,
+                delay: 90,
 
               }}
             />
