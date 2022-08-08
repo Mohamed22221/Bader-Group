@@ -49,7 +49,7 @@ const NavBar = () => {
       {i18n.language == "en" && <button onClick={languageAR}>العربيه<MdLanguage className='icon' /></button>}
       {i18n.language == "ar" && <button onClick={languageEn}>الانجليزيه<MdLanguage className='icon' /></button>}
 
-      <button><a href='#Contact'>{t("nav.contact-us")}</a></button>
+      <button onClick={HandelCloseMenu}><a href='#Contact'>{t("nav.contact-us")}</a></button>
      </div>
      </nav>
      <div className='menu-icon' onClick={HandelTogell} >

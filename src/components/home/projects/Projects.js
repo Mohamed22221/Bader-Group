@@ -27,7 +27,7 @@ const Projects = () => {
 
 
   }, [])
-
+console.log(categories)
   //filter data
   
   const Filter =  (button) =>{

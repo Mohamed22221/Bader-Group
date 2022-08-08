@@ -6,9 +6,10 @@
  .header{
  height: #{100vh-8vh};
  @media (max-width:576px) {
- 
   height: #{100vh-9vh};
  }
+
+
  position: relative;
   .left-header{
    width: 550px;
@@ -17,7 +18,7 @@
    top: 35%;
    transform: translateY(-45%);
    z-index: 1;
-   span{
+   h1{
     font-size: 50px;
     line-height: 60px;
     font-weight: bold;
@@ -34,7 +35,7 @@
     padding: 10px;
     top: 85px;
     transform: translateY(0);
-    span{
+    h1{
      font-size: 30px;
      line-height: 50px;
     }
@@ -47,7 +48,7 @@
     }
    }
    @media (max-width:360px) {
-    span{
+    h1{
      font-size: 20px;
     }
     p{

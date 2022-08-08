@@ -4,9 +4,8 @@ import "./Header.scss"
 import headerimg from "../../../assets/header.png"
 import ButtonLink from '../../glopal/ButtonLink'
 import { useTranslation } from 'react-i18next'
-import Typewriter from 'typewriter-effect';
-import TypeWriterEffect from 'react-typewriter-effect';
-import Typed from "react-typed"
+import TypeAnimation from 'react-type-animation';
+
 const Header = () => {
   const { t, i18n } = useTranslation();
 
@@ -17,15 +16,11 @@ const Header = () => {
       <div className='header'>
         <Container maxWidth="xl">
           <div className='left-header'>
-            <Typewriter
-              options={{
-                strings: [t("header.title-bader")],
-                autoStart: true,
-                devMode: false,
-                pauseFor : 80000000,
-                delay: 90,
 
-              }}
+            <TypeAnimation
+              cursor={true}
+              sequence={[t("header.title-bader")]}
+              wrapper="h1"
             />
             <p>{t("header.paragraph-bader")}</p>
             <ButtonLink title={t("header.button-bader")} />
