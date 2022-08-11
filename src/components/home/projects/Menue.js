@@ -20,12 +20,6 @@ const Menue = ({categories}) => {
           })}
           </Carousel>
           
-        
-
-
-       
-       
-          
         </div>
       
       )
