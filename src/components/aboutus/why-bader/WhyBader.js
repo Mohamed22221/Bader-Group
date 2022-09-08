@@ -5,7 +5,7 @@ import { Container } from '@mui/material';
 const WhyBader = () => {
  const { t, i18n } = useTranslation();
   return (
-    <div className='main-Kuwait2 '   dir='ltr'>
+    <div className='main-Kuwait2 ' dir='ltr'>
      <Container maxWidth="xl" className='container' >
       <div className='about'>
        <h1 >{t("about.why")} <p>{t("about.bader-groub")}</p> </h1>

@@ -20,7 +20,7 @@ const Projects = () => {
 
   useEffect(() => {
     axios.get(`https://bcg.000itkw.com/api/sliders`).then(response =>{
-       setAllCategories({DataSort : ['All', ...new Set(response.data.data.map(item =>  item.name_en  ))]})
+       setAllCategories({DataSort : [t("filter.btn-1"), ...new Set(response.data.data.map(item => i18n.language === "en" ? item.name_en : item.name_ar    ))]})
        setCategories(response.data.data)
     })
         
@@ -31,14 +31,14 @@ console.log(categories)
   //filter data
   
   const Filter =  (button) =>{
-    if(button === 'All'){
+    if(button === t("filter.btn-1")){
       axios.get(`https://bcg.000itkw.com/api/sliders`).then(response =>{
         setCategories(response.data.data)
       })
       return;
     }
       axios.get(`https://bcg.000itkw.com/api/sliders`).then(response =>{
-        setCategories(response.data.data.filter(item =>  item.name_en === button  ))
+        setCategories(response.data.data.filter(item => i18n.language === "en" ? item.name_en === button  : item.name_ar  === button   ))
         
       })
       return;

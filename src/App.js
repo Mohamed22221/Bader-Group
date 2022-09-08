@@ -42,7 +42,7 @@ console.log(social)
 
   return (
     
-    <div dir={i18n.language == "en" ? Dir : "rtl"} lang={i18n.language == "en" ? language : "ar"} className={i18n.language == "en" ? "body en" : "body ar"}>
+    <div dir={i18n.language == "en" ? Dir : "rtl"} lang={i18n.language == "en" ? "en" : "ar"} className={i18n.language == "en" ? "body en" : "body ar"}>
       <ScrollToTop />
       <ScrollTop />
       <NavBar />

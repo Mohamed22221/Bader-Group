@@ -1,7 +1,7 @@
 import { Container } from '@mui/material'
 import React from 'react'
 import "./AboutSector.scss"
-import AboutSector1 from '../../../assets/archi.jpg'
+import AboutSector1 from '../../../assets/engeneer.jpg'
 import AboutSector2 from "../../../assets/engineer.jpg"
 import { useTranslation } from 'react-i18next'
 
