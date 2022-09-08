@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/Bader-Group/static/css/main.ef204e43.css",
-    "main.js": "/Bader-Group/static/js/main.f6c9a1ad.js",
-    "static/media/person.jpg": "/Bader-Group/static/media/person.8a0a21c71ec73a66d80a.jpg",
+    "main.css": "/Bader-Group/static/css/main.f6a81e9a.css",
+    "main.js": "/Bader-Group/static/js/main.4f3bf9f1.js",
     "static/media/homeAbout.png": "/Bader-Group/static/media/homeAbout.faa4776a6b90dd2702ef.png",
     "static/media/engineer.jpg": "/Bader-Group/static/media/engineer.302de117f6c4c20238d4.jpg",
-    "static/media/archi.jpg": "/Bader-Group/static/media/archi.79a45b73e2115528f56d.jpg",
+    "static/media/person1.jpg": "/Bader-Group/static/media/person1.d9d514bbf1bb6e5dd629.jpg",
     "static/media/bg-projects.png": "/Bader-Group/static/media/bg-projects.3b8c9313ffb35478d3cb.png",
+    "static/media/engeneer.jpg": "/Bader-Group/static/media/engeneer.612fa4ea81237e4d8e39.jpg",
     "static/media/Subtraction 1.png": "/Bader-Group/static/media/Subtraction 1.9d9fe5a3c377bf05064b.png",
     "static/media/header.png": "/Bader-Group/static/media/header.4c4ad8f886f7033b7f32.png",
     "static/media/img12.png": "/Bader-Group/static/media/img12.1a181bcdde8be7a76bb4.png",
@@ -42,11 +42,11 @@
     "static/media/Iconfacebook.svg": "/Bader-Group/static/media/Iconfacebook.e0cddd6877093cd2c47c0aadd9de045a.svg",
     "static/media/Iconfacebook-black.svg": "/Bader-Group/static/media/Iconfacebook-black.3e9fe20c509bd0efdb6ca41fae557969.svg",
     "static/media/dottedLine.svg": "/Bader-Group/static/media/dottedLine.9773a5d6e478ef174e748cc2638fe274.svg",
-    "main.ef204e43.css.map": "/Bader-Group/static/css/main.ef204e43.css.map",
-    "main.f6c9a1ad.js.map": "/Bader-Group/static/js/main.f6c9a1ad.js.map"
+    "main.f6a81e9a.css.map": "/Bader-Group/static/css/main.f6a81e9a.css.map",
+    "main.4f3bf9f1.js.map": "/Bader-Group/static/js/main.4f3bf9f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef204e43.css",
-    "static/js/main.f6c9a1ad.js"
+    "static/css/main.f6a81e9a.css",
+    "static/js/main.4f3bf9f1.js"
   ]
 }
