@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Bader-Group/static/css/main.73f43408.css",
-    "main.js": "/Bader-Group/static/js/main.ec7633ee.js",
+    "main.css": "/Bader-Group/static/css/main.9226909f.css",
+    "main.js": "/Bader-Group/static/js/main.1a284aa0.js",
     "static/media/homeAbout.png": "/Bader-Group/static/media/homeAbout.faa4776a6b90dd2702ef.png",
     "static/media/engineer.jpg": "/Bader-Group/static/media/engineer.302de117f6c4c20238d4.jpg",
     "static/media/person1.jpg": "/Bader-Group/static/media/person1.d9d514bbf1bb6e5dd629.jpg",
@@ -14,6 +14,8 @@
     "static/media/foreign.png": "/Bader-Group/static/media/foreign.d7626aa7c2971e860574.png",
     "static/media/newkuwait.png": "/Bader-Group/static/media/newkuwait.ca102160d690a716fdcc.png",
     "static/media/deco-energy.png": "/Bader-Group/static/media/deco-energy.5062ac227a526b4a0b42.png",
+    "static/media/about-img.jpg": "/Bader-Group/static/media/about-img.93db52fba79728f7b32f.jpg",
+    "static/media/about-img2.jpg": "/Bader-Group/static/media/about-img2.9c5161803d8ecb4b2ca3.jpg",
     "static/media/partners3.svg": "/Bader-Group/static/media/partners3.3d9b8951b7a61eb08776b5e95ffb6a1e.svg",
     "static/media/bgabout2.png": "/Bader-Group/static/media/bgabout2.dea06f30767e0e98c196.png",
     "static/media/aboutus-bg2.png": "/Bader-Group/static/media/aboutus-bg2.4da79b2e4b5c2deedd31.png",
@@ -42,11 +44,11 @@
     "static/media/Iconfacebook.svg": "/Bader-Group/static/media/Iconfacebook.e0cddd6877093cd2c47c0aadd9de045a.svg",
     "static/media/Iconfacebook-black.svg": "/Bader-Group/static/media/Iconfacebook-black.3e9fe20c509bd0efdb6ca41fae557969.svg",
     "static/media/dottedLine.svg": "/Bader-Group/static/media/dottedLine.9773a5d6e478ef174e748cc2638fe274.svg",
-    "main.73f43408.css.map": "/Bader-Group/static/css/main.73f43408.css.map",
-    "main.ec7633ee.js.map": "/Bader-Group/static/js/main.ec7633ee.js.map"
+    "main.9226909f.css.map": "/Bader-Group/static/css/main.9226909f.css.map",
+    "main.1a284aa0.js.map": "/Bader-Group/static/js/main.1a284aa0.js.map"
   },
   "entrypoints": [
-    "static/css/main.73f43408.css",
-    "static/js/main.ec7633ee.js"
+    "static/css/main.9226909f.css",
+    "static/js/main.1a284aa0.js"
   ]
 }
