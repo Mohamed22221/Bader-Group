@@ -12,6 +12,7 @@ import { useState ,useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
 import Gleap from "gleap";
+import Construction from "./bages/Construction";
 
 function App() {
   Gleap.initialize("3W2XAMmPOWwHetgDhQATvzCzJn6tGtsl");
@@ -51,6 +52,8 @@ console.log(social)
         <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
         <Route path="sector" element={<Sectors counter={counter} />} />
+        <Route path="construction" element={<Construction counter={counter} />} />
+
       </Routes>
       <Contact />
       <Fotter />

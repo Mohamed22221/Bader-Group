@@ -43,6 +43,8 @@ const NavBar = () => {
        <NavLink to="/about" onClick={HandelCloseMenu}><li>{t("nav.about")}</li></NavLink>
        <NavLink to="/projects" onClick={HandelCloseMenu}><li>{t("nav.projects")}</li></NavLink>
        <NavLink to="/sector" onClick={HandelCloseMenu}><li>{t("nav.our-sector")}</li></NavLink>
+       <NavLink to="/construction" onClick={HandelCloseMenu}><li>{t("nav.construction")}</li></NavLink>
+
       </ul>
      
      <div className='buttons'>

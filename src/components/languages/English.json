@@ -7,6 +7,7 @@
   "home" : "Home",
   "about" : "About US",
   "projects" : "Projects",
+  "construction" : "Contracting",
   "our-sector" : "Our Sector",
   "contact-us" :"Contact Us",
   "faq" :"FAQ",
@@ -78,12 +79,19 @@
  "sector" : {
   "our-sectors" : "Our Sectors" , 
   "title-header-1" : "Our Vision",
-  "paragraph-header-1" : "To be one of the leading companies in the region in various fields. – Our clients and partners shall find what completes their success. We expect their needs and fulfill them according to our self-commitment – Everyone shall be proud to work with Bader Construction Group. We create chances to achieve exceptional results and reward success. – Society shall consider us responsible and effective.",
+  "paragraph-header-1" : "To occupy a leading place, and to be from the first companies in the Arabian Gulf and the Middle East over the next ten years, through the provision of services unparalleled in the construction sector and reliable the customers and take pride in it",
   "title-header-2" : "Our ethics",
   "paragraph-header-2" : "Our culture is based on integrity and mutual respect. Our reputation in adherence to the highest ethics in work is one of our valuable rules. We undertake the responsibility of each work we perform. In Bader Construction Group, we do not tolerate any wrong behavior and ask our employees to adhere such standards and the applicable local acts." ,
   "title-identification" : "Bader Construction Group For General" ,
   "p1-identification" : "Our culture is based on integrity and mutual respect. Our  reputation in adherence to the highest ethics in work is one of our valuable rules." ,
   "p2-identification" : "We undertake the responsibility of each work we perform. In Bader Construction Group, we do not tolerate any wrong behavior and ask our employees to adhere such standards and the applicable local acts." 
+ },
+ "contracting" :{
+  "dsc-company" : "Company Description",
+  "about-company":"Bader for construction has established in 2002 as branch of Bader International for Marketing and General Trading and Contracting Group in Kuwait as one of construction companies by the perseverance and the hard work, the continued development and improvement, focusing on the quality and customer's satisfaction, and before anything the grace of Allah, the company has become categorized and registered in the Central Tender Committee and the Municipality of Kuwait. The company is also implementing several major projects in the private sector and governmental projects of the public sector, it has also allocated a section for the housing sector, which is characterized by specialized technical staff carries out the projects in all different places in Kuwait, the company succeeded in 2009 to break into the implementation of the commercial and housing complexes, through speed and the accuracy of staff performance and excellent work. The company has also attracted the attention of everyone who deals with them and gain the trust of customers through prudent management and expertise and the existing cadre of specialized work in all fields and the various activities of the company.",
+  "our-mission" : "Our Mission" ,
+  "about-mission" :"We are looking forward to providing services characterized by high quality, and economical pricing competition through very accurate technical and professional plans which makes the technology creation and art management techniques and the craftsmanship implementation a platform for it, and seeks to build a strong partnership with our clients which consider a foundation stone for the Group's future"
+
  }
 
 
