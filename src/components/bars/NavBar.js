@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./NavBar.scss"
-import Logo from "../../assets/logo.svg"
+import Logo from "../../assets/logo.png"
 import Container from '@mui/material/Container';
 import { RiMenu3Fill } from 'react-icons/ri';
 import { MdLanguage } from 'react-icons/md';
